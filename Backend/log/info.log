@@ -1,0 +1,2071 @@
+20 Apr 25, 16:02:00 - django.request[ERROR]: Internal Server Error: /api/auth/pacient/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/renderers.py", line 696, in get_context
+    'post_form': self.get_rendered_html_form(data, view, 'POST', request),
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/renderers.py", line 511, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/renderers.py", line 521, in render_form_for_serializer
+    {'style': {'template_pack': 'rest_framework/horizontal'}}
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/renderers.py", line 372, in render
+    return template.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/templatetags/rest_framework.py", line 87, in render_field
+    return renderer.render_field(field, style)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/renderers.py", line 351, in render_field
+    return template.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 993, in render
+    return render_value_in_context(output, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 972, in render_value_in_context
+    value = str(value)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/utils/functional.py", line 156, in __text_cast
+    return func(*self.__args, **self.__kw)
+TypeError: gettext() takes 1 positional argument but 2 were given
+20 Apr 25, 16:02:37 - django.request[ERROR]: Internal Server Error: /api/auth/pacient/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/renderers.py", line 696, in get_context
+    'post_form': self.get_rendered_html_form(data, view, 'POST', request),
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/renderers.py", line 511, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/renderers.py", line 521, in render_form_for_serializer
+    {'style': {'template_pack': 'rest_framework/horizontal'}}
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/renderers.py", line 372, in render
+    return template.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/templatetags/rest_framework.py", line 87, in render_field
+    return renderer.render_field(field, style)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/renderers.py", line 351, in render_field
+    return template.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 993, in render
+    return render_value_in_context(output, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/template/base.py", line 972, in render_value_in_context
+    value = str(value)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/utils/functional.py", line 156, in __text_cast
+    return func(*self.__args, **self.__kw)
+TypeError: gettext() takes 1 positional argument but 2 were given
+20 Apr 25, 16:08:14 - django.request[ERROR]: Internal Server Error: /api/auth/doctor/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column Accounts_doctor.hospital does not exist
+LINE 1: ...ounts_doctor"."user_id", "Accounts_doctor"."sex", "Accounts_...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/models/query.py", line 274, in __iter__
+    self._fetch_all()
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1133, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column Accounts_doctor.hospital does not exist
+LINE 1: ...ounts_doctor"."user_id", "Accounts_doctor"."sex", "Accounts_...
+                                                             ^
+
+20 Apr 25, 16:25:05 - django.request[WARNING]: Not Found: /api/auth/appp
+20 Apr 25, 16:44:14 - django.request[WARNING]: Bad Request: /api/auth/pacient/
+20 Apr 25, 16:44:42 - django.request[WARNING]: Not Found: /api/auth/pacient/2/
+20 Apr 25, 16:45:49 - django.request[ERROR]: Internal Server Error: /api/auth/pacient/1/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/shortcuts.py", line 93, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/models/query.py", line 399, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/models/query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/models/query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1190, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1049, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1420, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'pacient_id' into field. Choices are: analize, blood_transfuzion, buletin_picture, caption, cnp, id, profile_picture, sex, user, user_id
+20 May 09, 23:08:32 - django.request[WARNING]: Not Found: /
+20 May 09, 23:08:39 - django.request[WARNING]: Not Found: /favicon.ico
+20 May 09, 23:27:32 - django.request[ERROR]: Internal Server Error: /api/users
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/stem_milano/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/users/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+20 May 09, 23:29:58 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 17, 18:01:09 - django.request[WARNING]: Not Found: /
+20 Aug 18, 12:55:37 - django.request[WARNING]: Not Found: /
+20 Aug 18, 12:55:54 - django.request[WARNING]: Not Found: /api/auth/client
+20 Aug 18, 12:57:00 - django.request[ERROR]: Internal Server Error: /api/users/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 433, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 490, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 566, in run_validation
+    self.run_validators(value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 590, in run_validators
+    validator(value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/validators.py", line 322, in __call__
+    if self.compare(cleaned, limit_value):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/validators.py", line 355, in compare
+    return a < b
+TypeError: '<' not supported between instances of 'str' and 'int'
+20 Aug 18, 12:58:55 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 18, 12:59:19 - django.request[ERROR]: Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/views.py", line 33, in post
+    if serializer.is_valid():
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 433, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 490, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 566, in run_validation
+    self.run_validators(value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 590, in run_validators
+    validator(value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/validators.py", line 322, in __call__
+    if self.compare(cleaned, limit_value):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/validators.py", line 355, in compare
+    return a < b
+TypeError: '<' not supported between instances of 'str' and 'int'
+20 Aug 18, 13:01:08 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 18, 13:01:14 - django.request[ERROR]: Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/views.py", line 33, in post
+    if serializer.is_valid():
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 433, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 490, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 566, in run_validation
+    self.run_validators(value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 590, in run_validators
+    validator(value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/validators.py", line 322, in __call__
+    if self.compare(cleaned, limit_value):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/validators.py", line 355, in compare
+    return a < b
+TypeError: '<' not supported between instances of 'str' and 'int'
+20 Aug 18, 13:04:06 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 18, 13:04:17 - django.request[ERROR]: Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/views.py", line 33, in post
+    if serializer.is_valid():
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 433, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 490, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 566, in run_validation
+    self.run_validators(value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 590, in run_validators
+    validator(value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/validators.py", line 322, in __call__
+    if self.compare(cleaned, limit_value):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/validators.py", line 355, in compare
+    return a < b
+TypeError: '<' not supported between instances of 'str' and 'int'
+20 Aug 18, 13:05:26 - django.request[ERROR]: Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/views.py", line 33, in post
+    if serializer.is_valid():
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 433, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 490, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 566, in run_validation
+    self.run_validators(value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 590, in run_validators
+    validator(value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/validators.py", line 322, in __call__
+    if self.compare(cleaned, limit_value):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/validators.py", line 355, in compare
+    return a < b
+TypeError: '<' not supported between instances of 'str' and 'int'
+20 Aug 18, 13:08:47 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 18, 13:10:12 - django.request[WARNING]: Not Found: /api/auth/artist/2/
+20 Aug 18, 13:37:08 - django.request[ERROR]: Internal Server Error: /api/auth/client/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column Accounts_client.country_id does not exist
+LINE 1: ...ccounts_client"."sex", "Accounts_client"."phone", "Accounts_...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "Accounts_client.country".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 274, in __iter__
+    self._fetch_all()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1133, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column Accounts_client.country_id does not exist
+LINE 1: ...ccounts_client"."sex", "Accounts_client"."phone", "Accounts_...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "Accounts_client.country".
+
+20 Aug 18, 13:38:16 - django.request[WARNING]: Not Found: /api/auth/country
+20 Aug 18, 13:53:47 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 18, 13:55:46 - django.request[ERROR]: Internal Server Error: /api/auth/client/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 94, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 122, in __new__
+    return cls.many_init(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 143, in many_init
+    child_serializer = cls(*args, **kwargs)
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/serializers.py", line 54, in __init__
+    if 'country' in self.data:
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 562, in data
+    ret = super().data
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 516, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/relations.py", line 185, in get_attribute
+    return super().get_attribute(instance)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 487, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `ClientSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'user'.
+20 Aug 18, 13:56:32 - django.request[ERROR]: Internal Server Error: /api/auth/client/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 94, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 122, in __new__
+    return cls.many_init(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 143, in many_init
+    child_serializer = cls(*args, **kwargs)
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/serializers.py", line 54, in __init__
+    if 'country' in self.data:
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 562, in data
+    ret = super().data
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 516, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/relations.py", line 185, in get_attribute
+    return super().get_attribute(instance)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/fields.py", line 487, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `ClientSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'user'.
+20 Aug 18, 14:04:06 - django.request[ERROR]: Internal Server Error: /api/auth/city/1/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/shortcuts.py", line 93, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 412, in get
+    (self.model._meta.object_name, num)
+Accounts.models.City.MultipleObjectsReturned: get() returned more than one City -- it returned 2!
+20 Aug 18, 14:10:14 - django.request[WARNING]: Not Found: /api/auth/city/1
+20 Aug 18, 14:10:28 - django.request[WARNING]: Not Found: /api/auth/city/1
+20 Aug 18, 14:10:29 - django.request[WARNING]: Not Found: /api/auth/city/1
+20 Aug 18, 14:10:29 - django.request[WARNING]: Not Found: /api/auth/city/1
+20 Aug 18, 14:12:39 - django.request[ERROR]: Internal Server Error: /api/auth/city/1/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/shortcuts.py", line 93, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 412, in get
+    (self.model._meta.object_name, num)
+Accounts.models.City.MultipleObjectsReturned: get() returned more than one City -- it returned 2!
+20 Aug 18, 14:20:12 - django.request[ERROR]: Internal Server Error: /api/auth/city/1/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/shortcuts.py", line 93, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 412, in get
+    (self.model._meta.object_name, num)
+Accounts.models.City.MultipleObjectsReturned: get() returned more than one City -- it returned 2!
+20 Aug 18, 14:32:26 - django.request[WARNING]: Bad Request: /api/auth/client/
+20 Aug 18, 14:32:42 - django.request[ERROR]: Internal Server Error: /api/auth/client/1/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/shortcuts.py", line 93, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 412, in get
+    (self.model._meta.object_name, num)
+Accounts.models.Client.MultipleObjectsReturned: get() returned more than one Client -- it returned 2!
+20 Aug 18, 14:32:46 - django.request[WARNING]: Not Found: /api/auth/client/2/
+20 Aug 18, 14:32:49 - django.request[ERROR]: Internal Server Error: /api/auth/client/1/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/shortcuts.py", line 93, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 412, in get
+    (self.model._meta.object_name, num)
+Accounts.models.Client.MultipleObjectsReturned: get() returned more than one Client -- it returned 2!
+20 Aug 18, 14:32:58 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 18, 14:33:34 - django.request[ERROR]: Internal Server Error: /api/auth/client/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(5)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 948, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1368, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.DataError: value too long for type character varying(5)
+
+20 Aug 18, 14:34:06 - django.request[ERROR]: Internal Server Error: /api/auth/client/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(5)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 948, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1368, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.DataError: value too long for type character varying(5)
+
+20 Aug 18, 14:34:23 - django.request[ERROR]: Internal Server Error: /api/auth/client/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(5)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 948, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1368, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.DataError: value too long for type character varying(5)
+
+20 Aug 18, 14:35:07 - django.request[WARNING]: Not Found: /api/auth/client/2/
+20 Aug 18, 14:35:15 - django.request[ERROR]: Internal Server Error: /api/auth/client/1/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/shortcuts.py", line 93, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 412, in get
+    (self.model._meta.object_name, num)
+Accounts.models.Client.MultipleObjectsReturned: get() returned more than one Client -- it returned 3!
+20 Aug 18, 14:35:27 - django.request[WARNING]: Not Found: /api/auth/client/2/
+20 Aug 18, 14:36:08 - django.request[WARNING]: Not Found: /api/auth/client/2/
+20 Aug 18, 14:36:14 - django.request[ERROR]: Internal Server Error: /api/auth/client/1/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/shortcuts.py", line 93, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 412, in get
+    (self.model._meta.object_name, num)
+Accounts.models.Client.MultipleObjectsReturned: get() returned more than one Client -- it returned 4!
+20 Aug 18, 14:36:50 - django.request[WARNING]: Bad Request: /api/auth/client/1/
+20 Aug 18, 14:37:03 - django.request[WARNING]: Bad Request: /api/auth/client/1/
+20 Aug 18, 14:37:14 - django.request[WARNING]: Bad Request: /api/auth/client/1/
+20 Aug 18, 16:44:46 - django.request[ERROR]: Internal Server Error: /api/auth/client/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(25)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 948, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1368, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.DataError: value too long for type character varying(25)
+
+20 Aug 18, 21:43:55 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 18, 21:57:23 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 18, 21:58:15 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 20, 19:12:53 - django.request[ERROR]: Internal Server Error: /api/auth/organizer/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column Accounts_organizer.music_type does not exist
+LINE 1: ...zer"."county_id", "Accounts_organizer"."city_id", "Accounts_...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 274, in __iter__
+    self._fetch_all()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1133, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column Accounts_organizer.music_type does not exist
+LINE 1: ...zer"."county_id", "Accounts_organizer"."city_id", "Accounts_...
+                                                             ^
+
+20 Aug 20, 19:20:28 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 20, 19:20:49 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 19:20:59 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 19:53:56 - django.request[WARNING]: Unauthorized: /api/auth/password-reset/
+20 Aug 20, 19:54:03 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 19:54:12 - django.request[WARNING]: Unauthorized: /api/auth/password-reset/
+20 Aug 20, 19:55:31 - django.request[ERROR]: Internal Server Error: /api/auth/password-reset/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/renderers.py", line 656, in get_context
+    raw_data_put_form = self.get_raw_data_form(data, view, 'PUT', request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 562, in data
+    ret = super().data
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 264, in data
+    self._data = self.get_initial()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 412, in get_initial
+    for field in self.fields.values()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 1015, in get_fields
+    serializer_class=self.__class__.__name__
+AssertionError: Class ChangePasswordSerializer missing "Meta" attribute
+20 Aug 20, 19:55:54 - django.request[ERROR]: Internal Server Error: /api/auth/password-reset/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/renderers.py", line 656, in get_context
+    raw_data_put_form = self.get_raw_data_form(data, view, 'PUT', request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 562, in data
+    ret = super().data
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 264, in data
+    self._data = self.get_initial()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 412, in get_initial
+    for field in self.fields.values()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 1038, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 1115, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: ("Creating a ModelSerializer without either the 'fields' attribute or the 'exclude' attribute has been deprecated since 3.3.0, and is now disallowed. Add an explicit fields = '__all__' to the ChangePasswordSerializer serializer.",)
+20 Aug 20, 19:56:17 - django.request[WARNING]: Method Not Allowed: /api/auth/password-reset/
+20 Aug 20, 19:56:51 - django.request[ERROR]: Internal Server Error: /api/auth/password-reset/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/renderers.py", line 656, in get_context
+    raw_data_put_form = self.get_raw_data_form(data, view, 'PUT', request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 562, in data
+    ret = super().data
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 264, in data
+    self._data = self.get_initial()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 412, in get_initial
+    for field in self.fields.values()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 1038, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 1100, in get_field_names
+    type(exclude).__name__
+TypeError: The `exclude` option must be a list or tuple. Got str.
+20 Aug 20, 19:57:04 - django.request[ERROR]: Internal Server Error: /api/auth/password-reset/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/renderers.py", line 656, in get_context
+    raw_data_put_form = self.get_raw_data_form(data, view, 'PUT', request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 562, in data
+    ret = super().data
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 264, in data
+    self._data = self.get_initial()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 412, in get_initial
+    for field in self.fields.values()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 1038, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/serializers.py", line 1166, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field '__all__' was included on serializer ChangePasswordSerializer in the 'exclude' option, but does not match any model field.
+20 Aug 20, 19:57:31 - django.request[WARNING]: Method Not Allowed: /api/auth/password-reset/
+20 Aug 20, 19:58:43 - django.request[WARNING]: Method Not Allowed: /api/auth/password-reset/
+20 Aug 20, 19:59:54 - django.request[WARNING]: Method Not Allowed: /api/auth/password-reset/
+20 Aug 20, 20:00:08 - django.request[ERROR]: Internal Server Error: /api/auth/password-reset/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/views.py", line 72, in update
+    if not self.object.check_password(serializer.data.get("old_password")):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/contrib/auth/models.py", line 400, in check_password
+    raise NotImplementedError("Django doesn't provide a DB representation for AnonymousUser.")
+NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
+20 Aug 20, 20:01:45 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:02:21 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:02:58 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:03:17 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:03:24 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 20:03:34 - django.request[WARNING]: Not Found: /api/auth/loout
+20 Aug 20, 20:03:36 - django.request[WARNING]: Unauthorized: /api/auth/logout/
+20 Aug 20, 20:03:40 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 20:03:44 - django.request[WARNING]: Unauthorized: /api/auth/logoutall/
+20 Aug 20, 20:03:50 - django.request[WARNING]: Unauthorized: /api/auth/logout/
+20 Aug 20, 20:04:04 - django.request[WARNING]: Unauthorized: /api/auth/logout/
+20 Aug 20, 20:04:25 - django.request[ERROR]: Internal Server Error: /api/auth/logout
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/logout/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+20 Aug 20, 20:04:34 - django.request[WARNING]: Unauthorized: /api/auth/logout/
+20 Aug 20, 20:04:53 - django.request[WARNING]: Unauthorized: /api/auth/logout/
+20 Aug 20, 20:05:02 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:06:23 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 20, 20:07:48 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:07:54 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:08:04 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:08:04 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:08:05 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:08:12 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:08:57 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:09:21 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:09:30 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:09:31 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:09:31 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:10:56 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 20, 20:11:07 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:11:23 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:11:39 - django.request[WARNING]: Not Found: /api/auth/users
+20 Aug 20, 20:11:59 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:14:05 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 20:14:32 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:14:40 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:14:52 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:14:57 - django.request[WARNING]: Unauthorized: /api/auth/logout/
+20 Aug 20, 20:15:14 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 20:15:30 - django.request[WARNING]: Unauthorized: /api/auth/logout/
+20 Aug 20, 20:15:51 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:16:25 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:20:13 - django.request[WARNING]: Unauthorized: /api/auth/logout/
+20 Aug 20, 20:20:15 - django.request[WARNING]: Unauthorized: /api/auth/logout/
+20 Aug 20, 20:21:32 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:21:43 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:23:32 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:23:43 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:23:43 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:23:46 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:24:02 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:24:19 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:26:14 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:28:04 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:28:14 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:28:18 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:28:33 - django.request[WARNING]: Not Found: /api/login
+20 Aug 20, 20:28:41 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 20:28:51 - django.request[WARNING]: Not Found: /api/auth//login
+20 Aug 20, 20:28:55 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 20:29:09 - django.request[WARNING]: Unauthorized: /api/auth/logout/
+20 Aug 20, 20:29:26 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:31:21 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:31:34 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:32:07 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:32:15 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:32:37 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:32:40 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:32:53 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:36:06 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:36:22 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:36:22 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:36:23 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:36:23 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:36:28 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:40:16 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:40:29 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:43:01 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:43:06 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:43:41 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:44:18 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:45:41 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:46:53 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:46:58 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:47:09 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:49:37 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:49:49 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:50:02 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:50:14 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 20, 20:51:28 - django.request[WARNING]: Unsupported Media Type: /api/auth/register/
+20 Aug 20, 20:52:18 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:52:29 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:52:53 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 20:53:06 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:53:32 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:54:51 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:55:01 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 20:56:34 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 20:56:40 - django.request[WARNING]: Unauthorized: /api/auth/logout/
+20 Aug 20, 20:56:45 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 20:57:05 - django.request[WARNING]: Unauthorized: /api/auth/logout/
+20 Aug 20, 20:57:07 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 20:57:35 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 21:00:20 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 20, 21:00:39 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 21:01:54 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 20, 21:02:19 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 21:03:00 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 21:03:11 - django.request[WARNING]: Not Found: /
+20 Aug 20, 21:03:36 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 21:03:55 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 21:17:40 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 21:21:14 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 21:21:18 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 21:21:55 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 21:23:33 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 21:23:47 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 21:31:35 - django.request[WARNING]: Method Not Allowed: /api/users/1/
+20 Aug 20, 21:33:26 - django.request[WARNING]: Method Not Allowed: /api/auth/password-reset/
+20 Aug 20, 21:33:30 - django.request[WARNING]: Method Not Allowed: /api/auth/password-reset/
+20 Aug 20, 21:33:44 - django.request[WARNING]: Method Not Allowed: /api/auth/password-reset/
+20 Aug 20, 21:33:53 - django.request[ERROR]: Internal Server Error: /api/auth/password-reset/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/views.py", line 72, in update
+    if not self.object.check_password(serializer.data.get("old_password")):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/contrib/auth/models.py", line 400, in check_password
+    raise NotImplementedError("Django doesn't provide a DB representation for AnonymousUser.")
+NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
+20 Aug 20, 21:34:37 - django.request[ERROR]: Internal Server Error: /api/auth/password-reset/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/views.py", line 72, in update
+    if not self.object.check_password(serializer.data.get("old_password")):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/contrib/auth/models.py", line 400, in check_password
+    raise NotImplementedError("Django doesn't provide a DB representation for AnonymousUser.")
+NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
+20 Aug 20, 21:35:13 - django.request[WARNING]: Unauthorized: /api/auth/password-reset/
+20 Aug 20, 21:35:27 - django.request[WARNING]: Unauthorized: /api/auth/password-reset/
+20 Aug 20, 21:35:42 - django.request[WARNING]: Unauthorized: /api/auth/password-reset/
+20 Aug 20, 21:38:15 - django.request[WARNING]: Unauthorized: /api/auth/password-reset/
+20 Aug 20, 21:38:45 - django.request[WARNING]: Unauthorized: /api/auth/password-reset/
+20 Aug 20, 21:38:53 - django.request[WARNING]: Unauthorized: /api/auth/password-reset/
+20 Aug 20, 21:39:03 - django.request[WARNING]: Unauthorized: /api/auth/password-reset/
+20 Aug 20, 21:39:17 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 21:40:21 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 21:40:56 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 21:41:17 - django.request[WARNING]: Unauthorized: /api/auth/password-reset/
+20 Aug 20, 21:42:11 - django.request[WARNING]: Method Not Allowed: /api/auth/password-reset/
+20 Aug 20, 22:19:43 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 22:19:57 - django.request[WARNING]: Unauthorized: /api/auth/login/
+20 Aug 20, 22:20:10 - django.request[WARNING]: Method Not Allowed: /api/auth/login/
+20 Aug 20, 22:28:31 - django.request[WARNING]: Bad Request: /api/auth/password-reset/
+20 Aug 20, 22:28:58 - django.request[WARNING]: Method Not Allowed: /api/auth/password-reset/
+20 Aug 20, 22:53:07 - django.request[WARNING]: Bad Request: /api/auth/password-reset/
+20 Aug 20, 23:20:04 - django.request[WARNING]: Bad Request: /api/auth/password-reset/confirm/
+20 Aug 20, 23:20:28 - django.request[WARNING]: Unauthorized: /api/auth/password-reset/confirm/
+20 Aug 20, 23:33:34 - django.request[WARNING]: Method Not Allowed: /api/auth/password-reset/
+20 Aug 20, 23:33:45 - django.request[WARNING]: Bad Request: /api/auth/password-reset/
+20 Aug 20, 23:33:58 - django.request[WARNING]: Method Not Allowed: /api/auth/password-reset/confirm
+20 Aug 20, 23:34:02 - django.request[WARNING]: Method Not Allowed: /api/auth/password-reset/confirm/
+20 Aug 21, 01:37:45 - django.request[WARNING]: Unauthorized: /api/auth/register/
+20 Aug 21, 01:37:57 - django.request[WARNING]: Unauthorized: /api/auth/register/
+20 Aug 21, 01:39:26 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 21, 01:39:43 - django.request[ERROR]: Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/views.py", line 45, in post
+    [user.email]
+UnboundLocalError: local variable 'user' referenced before assignment
+20 Aug 21, 01:41:31 - django.request[WARNING]: Not Found: /api/auth/register/6
+20 Aug 21, 01:41:33 - django.request[WARNING]: Not Found: /api/auth/register/5
+20 Aug 21, 01:41:36 - django.request[WARNING]: Not Found: /api/auth/register/3
+20 Aug 21, 01:41:38 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 21, 01:42:17 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 21, 01:43:05 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 21, 01:45:29 - django.request[ERROR]: Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/views.py", line 48, in post
+    [user]
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/mail/__init__.py", line 60, in send_mail
+    return mail.send()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 110, in send_messages
+    sent = self._send(message)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 123, in _send
+    recipients = [sanitize_address(addr, encoding) for addr in email_message.recipients()]
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 123, in <listcomp>
+    recipients = [sanitize_address(addr, encoding) for addr in email_message.recipients()]
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/mail/message.py", line 103, in sanitize_address
+    addr = parseaddr(addr)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/email/utils.py", line 224, in parseaddr
+    addrs = _AddressList(addr).addresslist
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/email/_parseaddr.py", line 509, in __init__
+    self.addresslist = self.getaddrlist()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/email/_parseaddr.py", line 252, in getaddrlist
+    while self.pos < len(self.field):
+TypeError: object of type 'User' has no len()
+20 Aug 21, 01:46:42 - django.request[WARNING]: Bad Request: /api/auth/register/
+20 Aug 21, 01:46:51 - django.request[WARNING]: Not Found: /api/users/2/
+20 Aug 21, 01:47:09 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 21, 01:47:18 - django.request[ERROR]: Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/views.py", line 48, in post
+    serializer.data['email']
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/mail/__init__.py", line 56, in send_mail
+    mail = EmailMultiAlternatives(subject, message, from_email, recipient_list, connection=connection)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/mail/message.py", line 432, in __init__
+    headers, cc, reply_to,
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/mail/message.py", line 210, in __init__
+    raise TypeError('"to" argument must be a list or tuple')
+TypeError: "to" argument must be a list or tuple
+20 Aug 21, 01:47:46 - django.request[WARNING]: Bad Request: /api/auth/register/
+20 Aug 21, 01:48:04 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 21, 02:01:35 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 25, 12:48:07 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 25, 12:48:08 - django.request[WARNING]: Not Found: /favicon.ico
+20 Aug 25, 12:50:54 - django.request[WARNING]: Unauthorized: /api/auth/muie/
+20 Aug 25, 12:51:13 - django.request[WARNING]: Unauthorized: /api/auth/muie/
+20 Aug 25, 12:54:22 - django.request[WARNING]: Unauthorized: /api/auth/muie/
+20 Aug 25, 12:54:38 - django.request[ERROR]: Internal Server Error: /api/auth/muie/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/utils/perminssions.py", line 7, in has_permission
+    print(request.user.data['user_type'])
+AttributeError: 'AnonymousUser' object has no attribute 'data'
+20 Aug 25, 12:54:52 - django.request[ERROR]: Internal Server Error: /api/auth/muie/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/utils/perminssions.py", line 7, in has_permission
+    print(request.user['user_type'])
+TypeError: 'AnonymousUser' object is not subscriptable
+20 Aug 25, 12:55:16 - django.request[ERROR]: Internal Server Error: /api/auth/muie/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/utils/perminssions.py", line 7, in has_permission
+    print(user['user_type'])
+NameError: name 'user' is not defined
+20 Aug 25, 12:55:25 - django.request[WARNING]: Unauthorized: /api/auth/muie/
+20 Aug 25, 12:58:18 - django.request[WARNING]: Unauthorized: /api/auth/test-permission/
+20 Aug 25, 12:58:28 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 12:59:16 - django.request[ERROR]: Internal Server Error: /api/auth/test-permission/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/utils/perminssions.py", line 8, in has_permission
+    print(request.user['user_type'])
+TypeError: 'User' object is not subscriptable
+20 Aug 25, 12:59:44 - django.request[ERROR]: Internal Server Error: /api/auth/test-permission/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/utils/perminssions.py", line 8, in has_permission
+    print(request.user.data)
+AttributeError: 'User' object has no attribute 'data'
+20 Aug 25, 13:00:03 - django.request[ERROR]: Internal Server Error: /api/auth/test-permission/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+TypeError: has_permission() missing 1 required positional argument: 'obj'
+20 Aug 25, 13:00:15 - django.request[ERROR]: Internal Server Error: /api/auth/test-permission/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+TypeError: has_permission() missing 1 required positional argument: 'obj'
+20 Aug 25, 13:03:21 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:07:23 - django.request[ERROR]: Internal Server Error: /api/auth/test-permission/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/utils/perminssions.py", line 8, in has_permission
+    client = Client.objects.all().filter('name')
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack (expected 2)
+20 Aug 25, 13:07:41 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:08:12 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:08:31 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:08:46 - django.request[WARNING]: Method Not Allowed: /api/auth/register/
+20 Aug 25, 13:10:14 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:13:13 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:18:39 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:20:21 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:20:34 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:21:02 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:21:22 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:21:50 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:22:39 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:23:42 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:24:45 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:26:41 - django.request[ERROR]: Internal Server Error: /api/auth/test-permission/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/utils/perminssions.py", line 8, in has_permission
+    return bool(request.user and request.user in Client.objects.filter('email'))
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack (expected 2)
+20 Aug 25, 13:27:17 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:27:53 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:28:15 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:29:02 - django.request[ERROR]: Internal Server Error: /api/auth/test-permission/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/utils/perminssions.py", line 7, in has_permission
+    print(Client.objects.get(email=request.user.email))
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1190, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1049, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1420, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'email' into field. Choices are: city, city_id, country, country_id, county, county_id, id, music_type, phone, profile_picture, sex, user, user_id
+20 Aug 25, 13:29:41 - django.request[ERROR]: Internal Server Error: /api/auth/test-permission/
+Traceback (most recent call last):
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/cezar_palagesiu/Documents/SoundLurke/Backend/src/Accounts/utils/perminssions.py", line 7, in has_permission
+    print(Client.objects.get(user=request.user.email))
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/fields/related_lookups.py", line 115, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/cezar_palagesiu/anaconda3/envs/soundlurke/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'palagesiucezar@gmail.com'
+20 Aug 25, 13:34:09 - django.request[WARNING]: Forbidden: /api/auth/test-permission/
+20 Aug 25, 13:34:19 - django.request[WARNING]: Forbidden: /api/auth/test-permission/

@@ -1,0 +1,9 @@
+to store data in fixtures: 
+    python3 manage.py dumpdata Accounts --format=yaml --indent=4 > Accounts/fixtures/store_data.yaml
+
+to get data from fixtures:
+    python3 manage.py loaddata Accounts/fixtures/initial_data.yaml
+ 
+
+[smtp key:
+    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]

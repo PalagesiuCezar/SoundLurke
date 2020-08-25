@@ -1,0 +1,1785 @@
+-   model: Accounts.country
+    pk: 1
+    fields:
+       name: Romania
+-   model: Accounts.county
+    pk: 1
+    fields:
+       country: 1
+       name: Alba
+-   model: Accounts.county
+    pk: 2
+    fields:
+       country: 1
+       name: Arad
+-   model: Accounts.county
+    pk: 3
+    fields:
+       country: 1
+       name: Arges
+-   model: Accounts.county
+    pk: 4
+    fields:
+       country: 1
+       name: Bacau
+-   model: Accounts.county
+    pk: 5
+    fields:
+       country: 1
+       name: Bihor
+-   model: Accounts.county
+    pk: 6
+    fields:
+       country: 1
+       name: Bistrita-nasaud
+-   model: Accounts.county
+    pk: 7
+    fields:
+       country: 1
+       name: Botosani
+-   model: Accounts.county
+    pk: 8
+    fields:
+       country: 1
+       name: Brasov
+-   model: Accounts.county
+    pk: 9
+    fields:
+       country: 1
+       name: Braila
+-   model: Accounts.county
+    pk: 10
+    fields:
+       country: 1
+       name: Buzau
+-   model: Accounts.county
+    pk: 15
+    fields:
+       country: 1
+       name: Calarasi
+-   model: Accounts.county
+    pk: 11
+    fields:
+       country: 1
+       name: Caras-severin
+-   model: Accounts.county
+    pk: 12
+    fields:
+       country: 1
+       name: Cluj
+-   model: Accounts.county
+    pk: 13
+    fields:
+       country: 1
+       name: Constanta
+-   model: Accounts.county
+    pk: 14
+    fields:
+       country: 1
+       name: Covasna
+-   model: Accounts.county
+    pk: 17
+    fields:
+       country: 1
+       name: Dimbovita
+-   model: Accounts.county
+    pk: 16
+    fields:
+       country: 1
+       name: Dolj
+-   model: Accounts.county
+    pk: 18
+    fields:
+       country: 1
+       name: Galati
+-   model: Accounts.county
+    pk: 19
+    fields:
+       country: 1
+       name: Giurgiu
+-   model: Accounts.county
+    pk: 20
+    fields:
+       country: 1
+       name: Gorj
+-   model: Accounts.county
+    pk: 21
+    fields:
+       country: 1
+       name: Harghita
+-   model: Accounts.county
+    pk: 22
+    fields:
+       country: 1
+       name: Hunedoara
+-   model: Accounts.county
+    pk: 23
+    fields:
+       country: 1
+       name: Ialomita
+-   model: Accounts.county
+    pk: 24
+    fields:
+       country: 1
+       name: Iasi
+-   model: Accounts.county
+    pk: 25
+    fields:
+       country: 1
+       name: Ilfov
+-   model: Accounts.county
+    pk: 26
+    fields:
+       country: 1
+       name: Maramures
+-   model: Accounts.county
+    pk: 27
+    fields:
+       country: 1
+       name: Mehedinti
+-   model: Accounts.county
+    pk: 28
+    fields:
+       country: 1
+       name: Mures
+-   model: Accounts.county
+    pk: 29
+    fields:
+       country: 1
+       name: Neamt
+-   model: Accounts.county
+    pk: 30
+    fields:
+       country: 1
+       name: Olt
+-   model: Accounts.county
+    pk: 31
+    fields:
+       country: 1
+       name: Prahova
+-   model: Accounts.county
+    pk: 35
+    fields:
+       country: 1
+       name: Salaj
+-   model: Accounts.county
+    pk: 32
+    fields:
+       country: 1
+       name: Satu mare
+-   model: Accounts.county
+    pk: 33
+    fields:
+       country: 1
+       name: Sibiu
+-   model: Accounts.county
+    pk: 34
+    fields:
+       country: 1
+       name: Suceava
+-   model: Accounts.county
+    pk: 36
+    fields:
+       country: 1
+       name: Teleorman
+-   model: Accounts.county
+    pk: 37
+    fields:
+       country: 1
+       name: Timis
+-   model: Accounts.county
+    pk: 38
+    fields:
+       country: 1
+       name: Tulcea
+-   model: Accounts.county
+    pk: 39
+    fields:
+       country: 1
+       name: Vaslui
+-   model: Accounts.county
+    pk: 41
+    fields:
+       country: 1
+       name: Vilcea
+-   model: Accounts.county
+    pk: 40
+    fields:
+       country: 1
+       name: Vrancea
+
+-   model: Accounts.city
+    pk: 1
+    fields:
+        county: 1
+        name: Alba Iulia
+-   model: Accounts.city
+    pk: 2
+    fields:
+        county: 1
+        name: Sebeș
+-   model: Accounts.city
+    pk: 3
+    fields:
+        county: 1
+        name: Aiud
+-   model: Accounts.city
+    pk: 4
+    fields:
+        county: 1
+        name: Cugir
+-   model: Accounts.city
+    pk: 5
+    fields:
+        county: 1
+        name: Blaj
+-   model: Accounts.city
+    pk: 6
+    fields:
+        county: 1
+        name: Ocna Mureș
+-   model: Accounts.city
+    pk: 7
+    fields:
+        county: 1
+        name: Zlatna
+-   model: Accounts.city
+    pk: 8
+    fields:
+        county: 1
+        name: Câmpeni
+-   model: Accounts.city
+    pk: 9
+    fields:
+        county: 1
+        name: Teiuș
+-   model: Accounts.city
+    pk: 10
+    fields:
+        county: 1
+        name: Abrud
+-   model: Accounts.city
+    pk: 11
+    fields:
+        county: 1
+        name: Baia de Arieș
+-   model: Accounts.city
+    pk: 12
+    fields:
+        county: 2
+        name: Arad
+-   model: Accounts.city
+    pk: 13
+    fields:
+        county: 2
+        name: Pecica
+-   model: Accounts.city
+    pk: 14
+    fields:
+        county: 2
+        name: Sântana
+-   model: Accounts.city
+    pk: 15
+    fields:
+        county: 2
+        name: Lipova
+-   model: Accounts.city
+    pk: 16
+    fields:
+        county: 2
+        name: Ineu
+-   model: Accounts.city
+    pk: 17
+    fields:
+        county: 2
+        name: ChișineuCriș
+-   model: Accounts.city
+    pk: 18
+    fields:
+        county: 2
+        name: Nădlac
+-   model: Accounts.city
+    pk: 19
+    fields:
+        county: 2
+        name: Curtici
+-   model: Accounts.city
+    pk: 20
+    fields:
+        county: 2
+        name: Pâncota
+-   model: Accounts.city
+    pk: 21
+    fields:
+        county: 2
+        name: Sebiș
+-   model: Accounts.city
+    pk: 22
+    fields:
+        county: 3
+        name: Pitești
+-   model: Accounts.city
+    pk: 23
+    fields:
+        county: 3
+        name: Mioveni
+-   model: Accounts.city
+    pk: 24
+    fields:
+        county: 3
+        name: Câmpulung
+-   model: Accounts.city
+    pk: 25
+    fields:
+        county: 3
+        name: Curtea de Argeș
+-   model: Accounts.city
+    pk: 26
+    fields:
+        county: 3
+        name: Ștefănești
+-   model: Accounts.city
+    pk: 27
+    fields:
+        county: 3
+        name: Costești
+-   model: Accounts.city
+    pk: 28
+    fields:
+        county: 3
+        name: Topoloveni
+-   model: Accounts.city
+    pk: 29
+    fields:
+        county: 4
+        name: Bacău
+-   model: Accounts.city
+    pk: 30
+    fields:
+        county: 4
+        name: Onești
+-   model: Accounts.city
+    pk: 31
+    fields:
+        county: 4
+        name: Moinești
+-   model: Accounts.city
+    pk: 32
+    fields:
+        county: 4
+        name: Comănești
+-   model: Accounts.city
+    pk: 33
+    fields:
+        county: 4
+        name: Buhuși
+-   model: Accounts.city
+    pk: 34
+    fields:
+        county: 4
+        name: Dărmănești
+-   model: Accounts.city
+    pk: 35
+    fields:
+        county: 4
+        name: Târgu Ocna
+-   model: Accounts.city
+    pk: 36
+    fields:
+        county: 4
+        name: Slănic Moldova
+-   model: Accounts.city
+    pk: 37
+    fields:
+        county: 5
+        name: Oradea
+-   model: Accounts.city
+    pk: 38
+    fields:
+        county: 5
+        name: Salonta
+-   model: Accounts.city
+    pk: 39
+    fields:
+        county: 5
+        name: Marghita
+-   model: Accounts.city
+    pk: 40
+    fields:
+        county: 5
+        name: Săcueni
+-   model: Accounts.city
+    pk: 41
+    fields:
+        county: 5
+        name: Beiuș
+-   model: Accounts.city
+    pk: 42
+    fields:
+        county: 5
+        name: Aleșd
+-   model: Accounts.city
+    pk: 43
+    fields:
+        county: 5
+        name: Valea lui Mihai
+-   model: Accounts.city
+    pk: 44
+    fields:
+        county: 5
+        name: Ștei
+-   model: Accounts.city
+    pk: 45
+    fields:
+        county: 5
+        name: Vașcău
+-   model: Accounts.city
+    pk: 46
+    fields:
+        county: 5
+        name: Nucet
+-   model: Accounts.city
+    pk: 47
+    fields:
+        county: 6
+        name: Bistrița
+-   model: Accounts.city
+    pk: 48
+    fields:
+        county: 6
+        name: Beclean
+-   model: Accounts.city
+    pk: 49
+    fields:
+        county: 6
+        name: SângeorzBăi
+-   model: Accounts.city
+    pk: 50
+    fields:
+        county: 6
+        name: Năsăud
+-   model: Accounts.city
+    pk: 51
+    fields:
+        county: 7
+        name: Botoșani
+-   model: Accounts.city
+    pk: 52
+    fields:
+        county: 7
+        name: Dorohoi
+-   model: Accounts.city
+    pk: 53
+    fields:
+        county: 7
+        name: Flămânzi
+-   model: Accounts.city
+    pk: 54
+    fields:
+        county: 7
+        name: Darabani
+-   model: Accounts.city
+    pk: 55
+    fields:
+        county: 7
+        name: Săveni
+-   model: Accounts.city
+    pk: 56
+    fields:
+        county: 7
+        name: Ștefănești
+-   model: Accounts.city
+    pk: 57
+    fields:
+        county: 7
+        name: Bucecea
+-   model: Accounts.city
+    pk: 58
+    fields:
+        county: 8
+        name: Brașov
+-   model: Accounts.city
+    pk: 59
+    fields:
+        county: 8
+        name: Săcele
+-   model: Accounts.city
+    pk: 60
+    fields:
+        county: 8
+        name: Făgăraș
+-   model: Accounts.city
+    pk: 61
+    fields:
+        county: 8
+        name: Zărnești
+-   model: Accounts.city
+    pk: 62
+    fields:
+        county: 8
+        name: Codlea
+-   model: Accounts.city
+    pk: 63
+    fields:
+        county: 8
+        name: Râșnov
+-   model: Accounts.city
+    pk: 64
+    fields:
+        county: 8
+        name: Victoria
+-   model: Accounts.city
+    pk: 65
+    fields:
+        county: 8
+        name: Rupea
+-   model: Accounts.city
+    pk: 66
+    fields:
+        county: 8
+        name: Ghimbav
+-   model: Accounts.city
+    pk: 67
+    fields:
+        county: 8
+        name: Predeal
+-   model: Accounts.city
+    pk: 68
+    fields:
+        county: 9
+        name: Brăila
+-   model: Accounts.city
+    pk: 69
+    fields:
+        county: 9
+        name: Ianca
+-   model: Accounts.city
+    pk: 70
+    fields:
+        county: 9
+        name: Însurăței
+-   model: Accounts.city
+    pk: 71
+    fields:
+        county: 9
+        name: Făurei
+-   model: Accounts.city
+    pk: 72
+    fields:
+        county: 10
+        name: Buzău
+-   model: Accounts.city
+    pk: 73
+    fields:
+        county: 10
+        name: Râmnicu Sărat
+-   model: Accounts.city
+    pk: 74
+    fields:
+        county: 10
+        name: Nehoiu
+-   model: Accounts.city
+    pk: 75
+    fields:
+        county: 10
+        name: Pătârlagele
+-   model: Accounts.city
+    pk: 76
+    fields:
+        county: 10
+        name: Pogoanele
+-   model: Accounts.city
+    pk: 77
+    fields:
+        county: 11
+        name: Reșița
+-   model: Accounts.city
+    pk: 78
+    fields:
+        county: 11
+        name: Caransebeș
+-   model: Accounts.city
+    pk: 79
+    fields:
+        county: 11
+        name: Bocșa
+-   model: Accounts.city
+    pk: 80
+    fields:
+        county: 11
+        name: Moldova Nouă
+-   model: Accounts.city
+    pk: 81
+    fields:
+        county: 11
+        name: Oravița
+-   model: Accounts.city
+    pk: 82
+    fields:
+        county: 11
+        name: Oțelu Roșu
+-   model: Accounts.city
+    pk: 83
+    fields:
+        county: 11
+        name: Anina
+-   model: Accounts.city
+    pk: 84
+    fields:
+        county: 11
+        name: Băile Herculane
+-   model: Accounts.city
+    pk: 85
+    fields:
+        county: 12
+        name: ClujNapoca
+-   model: Accounts.city
+    pk: 86
+    fields:
+        county: 12
+        name: Turda
+-   model: Accounts.city
+    pk: 87
+    fields:
+        county: 12
+        name: Dej
+-   model: Accounts.city
+    pk: 88
+    fields:
+        county: 12
+        name: Câmpia Turzii
+-   model: Accounts.city
+    pk: 89
+    fields:
+        county: 12
+        name: Gherla
+-   model: Accounts.city
+    pk: 90
+    fields:
+        county: 12
+        name: Huedin
+-   model: Accounts.city
+    pk: 91
+    fields:
+        county: 13
+        name: Medgidia
+-   model: Accounts.city
+    pk: 92
+    fields:
+        county: 13
+        name: Mangalia
+-   model: Accounts.city
+    pk: 93
+    fields:
+        county: 13
+        name: Năvodari
+-   model: Accounts.city
+    pk: 94
+    fields:
+        county: 13
+        name: Cernavodă
+-   model: Accounts.city
+    pk: 95
+    fields:
+        county: 13
+        name: Ovidiu
+-   model: Accounts.city
+    pk: 96
+    fields:
+        county: 13
+        name: Murfatlar
+-   model: Accounts.city
+    pk: 97
+    fields:
+        county: 13
+        name: Hârșova
+-   model: Accounts.city
+    pk: 98
+    fields:
+        county: 13
+        name: Eforie
+-   model: Accounts.city
+    pk: 99
+    fields:
+        county: 13
+        name: Techirghiol
+-   model: Accounts.city
+    pk: 100
+    fields:
+        county: 13
+        name: Negru Vodă
+-   model: Accounts.city
+    pk: 101
+    fields:
+        county: 14
+        name: Sfântu Gheorghe
+-   model: Accounts.city
+    pk: 102
+    fields:
+        county: 14
+        name: Târgu Secuiesc
+-   model: Accounts.city
+    pk: 103
+    fields:
+        county: 14
+        name: Covasna
+-   model: Accounts.city
+    pk: 104
+    fields:
+        county: 14
+        name: Baraolt
+-   model: Accounts.city
+    pk: 105
+    fields:
+        county: 14
+        name: Întorsura Buzăului
+-   model: Accounts.city
+    pk: 106
+    fields:
+        county: 15
+        name: Călărași
+-   model: Accounts.city
+    pk: 107
+    fields:
+        county: 15
+        name: Oltenița
+-   model: Accounts.city
+    pk: 108
+    fields:
+        county: 15
+        name: Budești
+-   model: Accounts.city
+    pk: 109
+    fields:
+        county: 15
+        name: Fundulea
+-   model: Accounts.city
+    pk: 110
+    fields:
+        county: 15
+        name: Lehliu Gară
+-   model: Accounts.city
+    pk: 111
+    fields:
+        county: 16
+        name: Craiova
+-   model: Accounts.city
+    pk: 112
+    fields:
+        county: 16
+        name: Băilești
+-   model: Accounts.city
+    pk: 113
+    fields:
+        county: 16
+        name: Calafat
+-   model: Accounts.city
+    pk: 114
+    fields:
+        county: 16
+        name: Filiași
+-   model: Accounts.city
+    pk: 115
+    fields:
+        county: 16
+        name: Dăbuleni
+-   model: Accounts.city
+    pk: 116
+    fields:
+        county: 16
+        name: Segarcea
+-   model: Accounts.city
+    pk: 117
+    fields:
+        county: 16
+        name: Bechet
+-   model: Accounts.city
+    pk: 118
+    fields:
+        county: 17
+        name: Târgoviște
+-   model: Accounts.city
+    pk: 119
+    fields:
+        county: 17
+        name: Moreni
+-   model: Accounts.city
+    pk: 120
+    fields:
+        county: 17
+        name: Pucioasa
+-   model: Accounts.city
+    pk: 121
+    fields:
+        county: 17
+        name: Găești
+-   model: Accounts.city
+    pk: 122
+    fields:
+        county: 17
+        name: Titu
+-   model: Accounts.city
+    pk: 123
+    fields:
+        county: 17
+        name: Fieni
+-   model: Accounts.city
+    pk: 124
+    fields:
+        county: 17
+        name: Răcari
+-   model: Accounts.city
+    pk: 125
+    fields:
+        county: 18
+        name: Galați
+-   model: Accounts.city
+    pk: 126
+    fields:
+        county: 18
+        name: Tecuci
+-   model: Accounts.city
+    pk: 127
+    fields:
+        county: 18
+        name: Târgu Bujor
+-   model: Accounts.city
+    pk: 128
+    fields:
+        county: 18
+        name: Berești
+-   model: Accounts.city
+    pk: 129
+    fields:
+        county: 19
+        name: Giurgiu
+-   model: Accounts.city
+    pk: 130
+    fields:
+        county: 19
+        name: BolintinVale
+-   model: Accounts.city
+    pk: 131
+    fields:
+        county: 19
+        name: Mihăilești
+-   model: Accounts.city
+    pk: 132
+    fields:
+        county: 20
+        name: Târgu Jiu
+-   model: Accounts.city
+    pk: 133
+    fields:
+        county: 20
+        name: Motru
+-   model: Accounts.city
+    pk: 134
+    fields:
+        county: 20
+        name: Rovinari
+-   model: Accounts.city
+    pk: 135
+    fields:
+        county: 20
+        name: BumbeștiJiu
+-   model: Accounts.city
+    pk: 136
+    fields:
+        county: 20
+        name: Târgu Cărbunești
+-   model: Accounts.city
+    pk: 137
+    fields:
+        county: 20
+        name: Tismana
+-   model: Accounts.city
+    pk: 138
+    fields:
+        county: 20
+        name: Novaci
+-   model: Accounts.city
+    pk: 139
+    fields:
+        county: 20
+        name: Țicleni
+-   model: Accounts.city
+    pk: 140
+    fields:
+        county: 21
+        name: Miercurea Ciuc
+-   model: Accounts.city
+    pk: 141
+    fields:
+        county: 21
+        name: Odorheiu Secuiesc
+-   model: Accounts.city
+    pk: 142
+    fields:
+        county: 21
+        name: Gheorgheni
+-   model: Accounts.city
+    pk: 143
+    fields:
+        county: 21
+        name: Toplița
+-   model: Accounts.city
+    pk: 144
+    fields:
+        county: 21
+        name: Cristuru Secuiesc
+-   model: Accounts.city
+    pk: 145
+    fields:
+        county: 21
+        name: Vlăhița
+-   model: Accounts.city
+    pk: 146
+    fields:
+        county: 21
+        name: Bălan
+-   model: Accounts.city
+    pk: 147
+    fields:
+        county: 21
+        name: Borsec
+-   model: Accounts.city
+    pk: 148
+    fields:
+        county: 21
+        name: Băile Tușnad
+-   model: Accounts.city
+    pk: 149
+    fields:
+        county: 22
+        name: Deva
+-   model: Accounts.city
+    pk: 150
+    fields:
+        county: 22
+        name: Hunedoara
+-   model: Accounts.city
+    pk: 151
+    fields:
+        county: 22
+        name: Petroșani
+-   model: Accounts.city
+    pk: 152
+    fields:
+        county: 22
+        name: Vulcan
+-   model: Accounts.city
+    pk: 153
+    fields:
+        county: 22
+        name: Lupeni
+-   model: Accounts.city
+    pk: 154
+    fields:
+        county: 22
+        name: Petrila
+-   model: Accounts.city
+    pk: 155
+    fields:
+        county: 22
+        name: Orăștie
+-   model: Accounts.city
+    pk: 156
+    fields:
+        county: 22
+        name: Brad
+-   model: Accounts.city
+    pk: 157
+    fields:
+        county: 22
+        name: Simeria
+-   model: Accounts.city
+    pk: 158
+    fields:
+        county: 22
+        name: Călan
+-   model: Accounts.city
+    pk: 159
+    fields:
+        county: 22
+        name: Hațeg
+-   model: Accounts.city
+    pk: 160
+    fields:
+        county: 22
+        name: Uricani
+-   model: Accounts.city
+    pk: 161
+    fields:
+        county: 22
+        name: Geoagiu
+-   model: Accounts.city
+    pk: 162
+    fields:
+        county: 22
+        name: Aninoasa
+-   model: Accounts.city
+    pk: 163
+    fields:
+        county: 23
+        name: Slobozia
+-   model: Accounts.city
+    pk: 164
+    fields:
+        county: 23
+        name: Fetești
+-   model: Accounts.city
+    pk: 165
+    fields:
+        county: 23
+        name: Urziceni
+-   model: Accounts.city
+    pk: 166
+    fields:
+        county: 23
+        name: Țăndărei
+-   model: Accounts.city
+    pk: 167
+    fields:
+        county: 23
+        name: Amara
+-   model: Accounts.city
+    pk: 168
+    fields:
+        county: 23
+        name: FierbințiTârg
+-   model: Accounts.city
+    pk: 169
+    fields:
+        county: 23
+        name: Căzănești
+-   model: Accounts.city
+    pk: 170
+    fields:
+        county: 24
+        name: Iași
+-   model: Accounts.city
+    pk: 171
+    fields:
+        county: 24
+        name: Pașcani
+-   model: Accounts.city
+    pk: 172
+    fields:
+        county: 24
+        name: Hârlău
+-   model: Accounts.city
+    pk: 173
+    fields:
+        county: 24
+        name: Târgu Frumos
+-   model: Accounts.city
+    pk: 174
+    fields:
+        county: 24
+        name: Podu Iloaiei
+-   model: Accounts.city
+    pk: 175
+    fields:
+        county: 25
+        name: Voluntari
+-   model: Accounts.city
+    pk: 176
+    fields:
+        county: 25
+        name: Pantelimon
+-   model: Accounts.city
+    pk: 177
+    fields:
+        county: 25
+        name: Buftea
+-   model: Accounts.city
+    pk: 178
+    fields:
+        county: 25
+        name: PopeștiLeordeni
+-   model: Accounts.city
+    pk: 179
+    fields:
+        county: 25
+        name: Bragadiru
+-   model: Accounts.city
+    pk: 180
+    fields:
+        county: 25
+        name: Chitila
+-   model: Accounts.city
+    pk: 181
+    fields:
+        county: 25
+        name: Otopeni
+-   model: Accounts.city
+    pk: 182
+    fields:
+        county: 25
+        name: Măgurele
+-   model: Accounts.city
+    pk: 183
+    fields:
+        county: 26
+        name: Baia Mare
+-   model: Accounts.city
+    pk: 184
+    fields:
+        county: 26
+        name: Sighetu Marmației
+-   model: Accounts.city
+    pk: 185
+    fields:
+        county: 26
+        name: Borșa
+-   model: Accounts.city
+    pk: 186
+    fields:
+        county: 26
+        name: Baia Sprie
+-   model: Accounts.city
+    pk: 187
+    fields:
+        county: 26
+        name: Vișeu de Sus
+-   model: Accounts.city
+    pk: 188
+    fields:
+        county: 26
+        name: Târgu Lăpuș
+-   model: Accounts.city
+    pk: 189
+    fields:
+        county: 26
+        name: Seini
+-   model: Accounts.city
+    pk: 190
+    fields:
+        county: 26
+        name: Șomcuta Mare
+-   model: Accounts.city
+    pk: 191
+    fields:
+        county: 26
+        name: Ulmeni
+-   model: Accounts.city
+    pk: 192
+    fields:
+        county: 26
+        name: TăuțiiMăgherăuș
+-   model: Accounts.city
+    pk: 193
+    fields:
+        county: 26
+        name: Cavnic
+-   model: Accounts.city
+    pk: 194
+    fields:
+        county: 26
+        name: Săliștea de Sus
+-   model: Accounts.city
+    pk: 195
+    fields:
+        county: 26
+        name: Dragomirești
+-   model: Accounts.city
+    pk: 196
+    fields:
+        county: 27
+        name: Strehaia
+-   model: Accounts.city
+    pk: 197
+    fields:
+        county: 27
+        name: Orșova
+-   model: Accounts.city
+    pk: 198
+    fields:
+        county: 27
+        name: Baia de Aramă
+-   model: Accounts.city
+    pk: 199
+    fields:
+        county: 27
+        name: Vânju Mare
+-   model: Accounts.city
+    pk: 200
+    fields:
+        county: 28
+        name: Târgu Mureș
+-   model: Accounts.city
+    pk: 201
+    fields:
+        county: 28
+        name: Reghin
+-   model: Accounts.city
+    pk: 202
+    fields:
+        county: 28
+        name: Sighișoara
+-   model: Accounts.city
+    pk: 203
+    fields:
+        county: 28
+        name: Târnăveni
+-   model: Accounts.city
+    pk: 204
+    fields:
+        county: 28
+        name: Luduș
+-   model: Accounts.city
+    pk: 205
+    fields:
+        county: 28
+        name: Sovata
+-   model: Accounts.city
+    pk: 206
+    fields:
+        county: 28
+        name: Iernut
+-   model: Accounts.city
+    pk: 207
+    fields:
+        county: 28
+        name: Sărmașu
+-   model: Accounts.city
+    pk: 208
+    fields:
+        county: 28
+        name: Ungheni
+-   model: Accounts.city
+    pk: 209
+    fields:
+        county: 28
+        name: Miercurea Nirajului
+-   model: Accounts.city
+    pk: 210
+    fields:
+        county: 28
+        name: Sângeorgiu de Pădure
+-   model: Accounts.city
+    pk: 211
+    fields:
+        county: 29
+        name: Piatra Neamț
+-   model: Accounts.city
+    pk: 212
+    fields:
+        county: 29
+        name: Roman
+-   model: Accounts.city
+    pk: 213
+    fields:
+        county: 29
+        name: Târgu Neamț
+-   model: Accounts.city
+    pk: 214
+    fields:
+        county: 29
+        name: Roznov
+-   model: Accounts.city
+    pk: 215
+    fields:
+        county: 29
+        name: Bicaz
+-   model: Accounts.city
+    pk: 216
+    fields:
+        county: 30
+        name: Slatina
+-   model: Accounts.city
+    pk: 217
+    fields:
+        county: 30
+        name: Caracal
+-   model: Accounts.city
+    pk: 218
+    fields:
+        county: 30
+        name: Balș
+-   model: Accounts.city
+    pk: 219
+    fields:
+        county: 30
+        name: Corabia
+-   model: Accounts.city
+    pk: 220
+    fields:
+        county: 30
+        name: Scornicești
+-   model: Accounts.city
+    pk: 221
+    fields:
+        county: 30
+        name: DrăgăneștiOlt
+-   model: Accounts.city
+    pk: 222
+    fields:
+        county: 30
+        name: PiatraOlt
+-   model: Accounts.city
+    pk: 223
+    fields:
+        county: 30
+        name: Potcoava
+-   model: Accounts.city
+    pk: 224
+    fields:
+        county: 31
+        name: Ploiești
+-   model: Accounts.city
+    pk: 225
+    fields:
+        county: 31
+        name: Câmpina
+-   model: Accounts.city
+    pk: 226
+    fields:
+        county: 31
+        name: Băicoi
+-   model: Accounts.city
+    pk: 227
+    fields:
+        county: 31
+        name: Breaza
+-   model: Accounts.city
+    pk: 228
+    fields:
+        county: 31
+        name: Mizil
+-   model: Accounts.city
+    pk: 229
+    fields:
+        county: 31
+        name: Vălenii de Munte
+-   model: Accounts.city
+    pk: 230
+    fields:
+        county: 31
+        name: Comarnic
+-   model: Accounts.city
+    pk: 231
+    fields:
+        county: 31
+        name: BoldeștiScăeni
+-   model: Accounts.city
+    pk: 232
+    fields:
+        county: 31
+        name: Urlați
+-   model: Accounts.city
+    pk: 233
+    fields:
+        county: 31
+        name: Sinaia
+-   model: Accounts.city
+    pk: 234
+    fields:
+        county: 31
+        name: Bușteni
+-   model: Accounts.city
+    pk: 235
+    fields:
+        county: 31
+        name: Plopeni
+-   model: Accounts.city
+    pk: 236
+    fields:
+        county: 31
+        name: Slănic
+-   model: Accounts.city
+    pk: 237
+    fields:
+        county: 31
+        name: Azuga
+-   model: Accounts.city
+    pk: 238
+    fields:
+        county: 32
+        name: Satu Mare
+-   model: Accounts.city
+    pk: 239
+    fields:
+        county: 32
+        name: Carei
+-   model: Accounts.city
+    pk: 240
+    fields:
+        county: 32
+        name: NegreștiOaș
+-   model: Accounts.city
+    pk: 241
+    fields:
+        county: 32
+        name: Tășnad
+-   model: Accounts.city
+    pk: 242
+    fields:
+        county: 32
+        name: Livada
+-   model: Accounts.city
+    pk: 243
+    fields:
+        county: 32
+        name: Ardud
+-   model: Accounts.city
+    pk: 244
+    fields:
+        county: 33
+        name: Sibiu
+-   model: Accounts.city
+    pk: 245
+    fields:
+        county: 33
+        name: Mediaș
+-   model: Accounts.city
+    pk: 246
+    fields:
+        county: 33
+        name: Cisnădie
+-   model: Accounts.city
+    pk: 247
+    fields:
+        county: 33
+        name: Avrig
+-   model: Accounts.city
+    pk: 248
+    fields:
+        county: 33
+        name: Agnita
+-   model: Accounts.city
+    pk: 249
+    fields:
+        county: 33
+        name: Dumbrăveni
+-   model: Accounts.city
+    pk: 250
+    fields:
+        county: 33
+        name: Tălmaciu
+-   model: Accounts.city
+    pk: 251
+    fields:
+        county: 33
+        name: Copșa Mică
+-   model: Accounts.city
+    pk: 252
+    fields:
+        county: 33
+        name: Săliște
+-   model: Accounts.city
+    pk: 253
+    fields:
+        county: 33
+        name: Miercurea Sibiului
+-   model: Accounts.city
+    pk: 254
+    fields:
+        county: 33
+        name: Ocna Sibiului
+-   model: Accounts.city
+    pk: 255
+    fields:
+        county: 34
+        name: Suceava
+-   model: Accounts.city
+    pk: 256
+    fields:
+        county: 34
+        name: Fălticeni
+-   model: Accounts.city
+    pk: 257
+    fields:
+        county: 34
+        name: Rădăuți
+-   model: Accounts.city
+    pk: 258
+    fields:
+        county: 34
+        name: Câmpulung Moldovenesc
+-   model: Accounts.city
+    pk: 259
+    fields:
+        county: 34
+        name: Vatra Dornei
+-   model: Accounts.city
+    pk: 260
+    fields:
+        county: 34
+        name: Gura Humorului
+-   model: Accounts.city
+    pk: 261
+    fields:
+        county: 34
+        name: Vicovu de Sus
+-   model: Accounts.city
+    pk: 262
+    fields:
+        county: 34
+        name: Dolhasca
+-   model: Accounts.city
+    pk: 263
+    fields:
+        county: 34
+        name: Liteni
+-   model: Accounts.city
+    pk: 264
+    fields:
+        county: 34
+        name: Salcea
+-   model: Accounts.city
+    pk: 265
+    fields:
+        county: 34
+        name: Siret
+-   model: Accounts.city
+    pk: 266
+    fields:
+        county: 34
+        name: Cajvana
+-   model: Accounts.city
+    pk: 267
+    fields:
+        county: 34
+        name: Frasin
+-   model: Accounts.city
+    pk: 268
+    fields:
+        county: 34
+        name: Broșteni
+-   model: Accounts.city
+    pk: 269
+    fields:
+        county: 34
+        name: Milișăuți
+-   model: Accounts.city
+    pk: 270
+    fields:
+        county: 34
+        name: Solca
+-   model: Accounts.city
+    pk: 271
+    fields:
+        county: 35
+        name: Zalău
+-   model: Accounts.city
+    pk: 272
+    fields:
+        county: 35
+        name: Șimleu Silvaniei
+-   model: Accounts.city
+    pk: 273
+    fields:
+        county: 35
+        name: Jibou
+-   model: Accounts.city
+    pk: 274
+    fields:
+        county: 35
+        name: Cehu Silvaniei
+-   model: Accounts.city
+    pk: 275
+    fields:
+        county: 36
+        name: Alexandria
+-   model: Accounts.city
+    pk: 276
+    fields:
+        county: 36
+        name: Roșiorii de Vede
+-   model: Accounts.city
+    pk: 277
+    fields:
+        county: 36
+        name: Turnu Măgurele
+-   model: Accounts.city
+    pk: 278
+    fields:
+        county: 36
+        name: Zimnicea
+-   model: Accounts.city
+    pk: 279
+    fields:
+        county: 36
+        name: Videle
+-   model: Accounts.city
+    pk: 280
+    fields:
+        county: 37
+        name: Timișoara
+-   model: Accounts.city
+    pk: 281
+    fields:
+        county: 37
+        name: Lugoj
+-   model: Accounts.city
+    pk: 282
+    fields:
+        county: 37
+        name: Sânnicolau Mare
+-   model: Accounts.city
+    pk: 283
+    fields:
+        county: 37
+        name: Jimbolia
+-   model: Accounts.city
+    pk: 284
+    fields:
+        county: 37
+        name: Recaș
+-   model: Accounts.city
+    pk: 285
+    fields:
+        county: 37
+        name: Făget
+-   model: Accounts.city
+    pk: 286
+    fields:
+        county: 37
+        name: Buziaș
+-   model: Accounts.city
+    pk: 287
+    fields:
+        county: 37
+        name: Deta
+-   model: Accounts.city
+    pk: 288
+    fields:
+        county: 37
+        name: Gătaia
+-   model: Accounts.city
+    pk: 289
+    fields:
+        county: 37
+        name: Ciacova
+-   model: Accounts.city
+    pk: 290
+    fields:
+        county: 38
+        name: Tulcea
+-   model: Accounts.city
+    pk: 291
+    fields:
+        county: 38
+        name: Babadag
+-   model: Accounts.city
+    pk: 292
+    fields:
+        county: 38
+        name: Măcin
+-   model: Accounts.city
+    pk: 293
+    fields:
+        county: 38
+        name: Isaccea
+-   model: Accounts.city
+    pk: 294
+    fields:
+        county: 38
+        name: Sulina
+-   model: Accounts.city
+    pk: 295
+    fields:
+        county: 39
+        name: Bârlad
+-   model: Accounts.city
+    pk: 296
+    fields:
+        county: 39
+        name: Vaslui
+-   model: Accounts.city
+    pk: 297
+    fields:
+        county: 39
+        name: Huși
+-   model: Accounts.city
+    pk: 298
+    fields:
+        county: 39
+        name: Negrești
+-   model: Accounts.city
+    pk: 299
+    fields:
+        county: 39
+        name: Murgeni
+-   model: Accounts.city
+    pk: 300
+    fields:
+        county: 40
+        name: Focșani
+-   model: Accounts.city
+    pk: 301
+    fields:
+        county: 40
+        name: Adjud
+-   model: Accounts.city
+    pk: 302
+    fields:
+        county: 40
+        name: Mărășești
+-   model: Accounts.city
+    pk: 303
+    fields:
+        county: 40
+        name: Odobești
+-   model: Accounts.city
+    pk: 304
+    fields:
+        county: 40
+        name: Panciu
+-   model: Accounts.city
+    pk: 305
+    fields:
+        county: 41
+        name: Râmnicu Vâlcea
+-   model: Accounts.city
+    pk: 306
+    fields:
+        county: 41
+        name: Drăgășani
+-   model: Accounts.city
+    pk: 307
+    fields:
+        county: 41
+        name: Băbeni
+-   model: Accounts.city
+    pk: 308
+    fields:
+        county: 41
+        name: Călimănești
+-   model: Accounts.city
+    pk: 309
+    fields:
+        county: 41
+        name: Horezu
+-   model: Accounts.city
+    pk: 310
+    fields:
+        county: 41
+        name: Brezoi
+-   model: Accounts.city
+    pk: 311
+    fields:
+        county: 41
+        name: Bălcești
+-   model: Accounts.city
+    pk: 312
+    fields:
+        county: 41
+        name: Berbești
+-   model: Accounts.city
+    pk: 313
+    fields:
+        county: 41
+        name: Băile Olănești
+-   model: Accounts.city
+    pk: 314
+    fields:
+        county: 41
+        name: Ocnele Mari
+-   model: Accounts.city
+    pk: 315
+    fields:
+        county: 41
+        name: Băile Govora

@@ -1,0 +1,1869 @@
+-   model: Accounts.user
+    pk: 1
+    fields:
+        password: pbkdf2_sha256$150000$qDBrd12q3oFO$n0LIzs+RcKhuoLfmvVLhkKsP48xgVibc9ClzEY9e1Vg=
+        last_login: null
+        is_superuser: false
+        first_name: Cezar
+        last_name: Palagesiu
+        is_staff: false
+        is_active: true
+        date_joined: 2020-08-18 21:53:45.672338+00:00
+        email: palagesiucezar@gmail.com
+        last_online: 2020-08-18 21:53:45.672362+00:00
+        user_type: 1
+        groups: []
+        user_permissions: []
+-   model: Accounts.user
+    pk: 2
+    fields:
+        password: pbkdf2_sha256$150000$D3kgRKBvoR1a$QDm3GY2aNbXaWaGryqepaRbH9l3MVwadGMfNsCy34tM=
+        last_login: null
+        is_superuser: false
+        first_name: Ian
+        last_name: macelaru
+        is_staff: false
+        is_active: true
+        date_joined: 2020-08-18 21:57:38.312675+00:00
+        email: andreimacelaru@gmail.com
+        last_online: 2020-08-18 21:57:38.312689+00:00
+        user_type: 2
+        groups: []
+        user_permissions: []
+-   model: Accounts.user
+    pk: 3
+    fields:
+        password: pbkdf2_sha256$150000$5ZYeqfK7h5nr$h+MkD7JFtrsjUEfPlzyUgPkxEWJspXOzkyLeedlIbtg=
+        last_login: null
+        is_superuser: false
+        first_name: Iana
+        last_name: asd
+        is_staff: false
+        is_active: true
+        date_joined: 2020-08-18 21:58:27.112713+00:00
+        email: dadh2n@asdna.com
+        last_online: 2020-08-18 21:58:27.112728+00:00
+        user_type: 3
+        groups: []
+        user_permissions: []
+-   model: Accounts.country
+    pk: 1
+    fields:
+        name: Romania
+-   model: Accounts.county
+    pk: 1
+    fields:
+        country: 1
+        name: Alba
+-   model: Accounts.county
+    pk: 2
+    fields:
+        country: 1
+        name: Arad
+-   model: Accounts.county
+    pk: 3
+    fields:
+        country: 1
+        name: Arges
+-   model: Accounts.county
+    pk: 4
+    fields:
+        country: 1
+        name: Bacau
+-   model: Accounts.county
+    pk: 5
+    fields:
+        country: 1
+        name: Bihor
+-   model: Accounts.county
+    pk: 6
+    fields:
+        country: 1
+        name: Bistrita-nasaud
+-   model: Accounts.county
+    pk: 7
+    fields:
+        country: 1
+        name: Botosani
+-   model: Accounts.county
+    pk: 8
+    fields:
+        country: 1
+        name: Brasov
+-   model: Accounts.county
+    pk: 9
+    fields:
+        country: 1
+        name: Braila
+-   model: Accounts.county
+    pk: 10
+    fields:
+        country: 1
+        name: Buzau
+-   model: Accounts.county
+    pk: 11
+    fields:
+        country: 1
+        name: Caras-severin
+-   model: Accounts.county
+    pk: 12
+    fields:
+        country: 1
+        name: Cluj
+-   model: Accounts.county
+    pk: 13
+    fields:
+        country: 1
+        name: Constanta
+-   model: Accounts.county
+    pk: 14
+    fields:
+        country: 1
+        name: Covasna
+-   model: Accounts.county
+    pk: 15
+    fields:
+        country: 1
+        name: Calarasi
+-   model: Accounts.county
+    pk: 16
+    fields:
+        country: 1
+        name: Dolj
+-   model: Accounts.county
+    pk: 17
+    fields:
+        country: 1
+        name: Dimbovita
+-   model: Accounts.county
+    pk: 18
+    fields:
+        country: 1
+        name: Galati
+-   model: Accounts.county
+    pk: 19
+    fields:
+        country: 1
+        name: Giurgiu
+-   model: Accounts.county
+    pk: 20
+    fields:
+        country: 1
+        name: Gorj
+-   model: Accounts.county
+    pk: 21
+    fields:
+        country: 1
+        name: Harghita
+-   model: Accounts.county
+    pk: 22
+    fields:
+        country: 1
+        name: Hunedoara
+-   model: Accounts.county
+    pk: 23
+    fields:
+        country: 1
+        name: Ialomita
+-   model: Accounts.county
+    pk: 24
+    fields:
+        country: 1
+        name: Iasi
+-   model: Accounts.county
+    pk: 25
+    fields:
+        country: 1
+        name: Ilfov
+-   model: Accounts.county
+    pk: 26
+    fields:
+        country: 1
+        name: Maramures
+-   model: Accounts.county
+    pk: 27
+    fields:
+        country: 1
+        name: Mehedinti
+-   model: Accounts.county
+    pk: 28
+    fields:
+        country: 1
+        name: Mures
+-   model: Accounts.county
+    pk: 29
+    fields:
+        country: 1
+        name: Neamt
+-   model: Accounts.county
+    pk: 30
+    fields:
+        country: 1
+        name: Olt
+-   model: Accounts.county
+    pk: 31
+    fields:
+        country: 1
+        name: Prahova
+-   model: Accounts.county
+    pk: 32
+    fields:
+        country: 1
+        name: Satu mare
+-   model: Accounts.county
+    pk: 33
+    fields:
+        country: 1
+        name: Sibiu
+-   model: Accounts.county
+    pk: 34
+    fields:
+        country: 1
+        name: Suceava
+-   model: Accounts.county
+    pk: 35
+    fields:
+        country: 1
+        name: Salaj
+-   model: Accounts.county
+    pk: 36
+    fields:
+        country: 1
+        name: Teleorman
+-   model: Accounts.county
+    pk: 37
+    fields:
+        country: 1
+        name: Timis
+-   model: Accounts.county
+    pk: 38
+    fields:
+        country: 1
+        name: Tulcea
+-   model: Accounts.county
+    pk: 39
+    fields:
+        country: 1
+        name: Vaslui
+-   model: Accounts.county
+    pk: 40
+    fields:
+        country: 1
+        name: Vrancea
+-   model: Accounts.county
+    pk: 41
+    fields:
+        country: 1
+        name: Vilcea
+-   model: Accounts.city
+    pk: 1
+    fields:
+        county: 1
+        name: Alba Iulia
+-   model: Accounts.city
+    pk: 2
+    fields:
+        county: 1
+        name: "Sebe\u0219"
+-   model: Accounts.city
+    pk: 3
+    fields:
+        county: 1
+        name: Aiud
+-   model: Accounts.city
+    pk: 4
+    fields:
+        county: 1
+        name: Cugir
+-   model: Accounts.city
+    pk: 5
+    fields:
+        county: 1
+        name: Blaj
+-   model: Accounts.city
+    pk: 6
+    fields:
+        county: 1
+        name: "Ocna Mure\u0219"
+-   model: Accounts.city
+    pk: 7
+    fields:
+        county: 1
+        name: Zlatna
+-   model: Accounts.city
+    pk: 8
+    fields:
+        county: 1
+        name: "C\xE2mpeni"
+-   model: Accounts.city
+    pk: 9
+    fields:
+        county: 1
+        name: "Teiu\u0219"
+-   model: Accounts.city
+    pk: 10
+    fields:
+        county: 1
+        name: Abrud
+-   model: Accounts.city
+    pk: 11
+    fields:
+        county: 1
+        name: "Baia de Arie\u0219"
+-   model: Accounts.city
+    pk: 12
+    fields:
+        county: 2
+        name: Arad
+-   model: Accounts.city
+    pk: 13
+    fields:
+        county: 2
+        name: Pecica
+-   model: Accounts.city
+    pk: 14
+    fields:
+        county: 2
+        name: "S\xE2ntana"
+-   model: Accounts.city
+    pk: 15
+    fields:
+        county: 2
+        name: Lipova
+-   model: Accounts.city
+    pk: 16
+    fields:
+        county: 2
+        name: Ineu
+-   model: Accounts.city
+    pk: 17
+    fields:
+        county: 2
+        name: "Chi\u0219ineuCri\u0219"
+-   model: Accounts.city
+    pk: 18
+    fields:
+        county: 2
+        name: "N\u0103dlac"
+-   model: Accounts.city
+    pk: 19
+    fields:
+        county: 2
+        name: Curtici
+-   model: Accounts.city
+    pk: 20
+    fields:
+        county: 2
+        name: "P\xE2ncota"
+-   model: Accounts.city
+    pk: 21
+    fields:
+        county: 2
+        name: "Sebi\u0219"
+-   model: Accounts.city
+    pk: 22
+    fields:
+        county: 3
+        name: "Pite\u0219ti"
+-   model: Accounts.city
+    pk: 23
+    fields:
+        county: 3
+        name: Mioveni
+-   model: Accounts.city
+    pk: 24
+    fields:
+        county: 3
+        name: "C\xE2mpulung"
+-   model: Accounts.city
+    pk: 25
+    fields:
+        county: 3
+        name: "Curtea de Arge\u0219"
+-   model: Accounts.city
+    pk: 26
+    fields:
+        county: 3
+        name: "\u0218tef\u0103ne\u0219ti"
+-   model: Accounts.city
+    pk: 27
+    fields:
+        county: 3
+        name: "Coste\u0219ti"
+-   model: Accounts.city
+    pk: 28
+    fields:
+        county: 3
+        name: Topoloveni
+-   model: Accounts.city
+    pk: 29
+    fields:
+        county: 4
+        name: "Bac\u0103u"
+-   model: Accounts.city
+    pk: 30
+    fields:
+        county: 4
+        name: "One\u0219ti"
+-   model: Accounts.city
+    pk: 31
+    fields:
+        county: 4
+        name: "Moine\u0219ti"
+-   model: Accounts.city
+    pk: 32
+    fields:
+        county: 4
+        name: "Com\u0103ne\u0219ti"
+-   model: Accounts.city
+    pk: 33
+    fields:
+        county: 4
+        name: "Buhu\u0219i"
+-   model: Accounts.city
+    pk: 34
+    fields:
+        county: 4
+        name: "D\u0103rm\u0103ne\u0219ti"
+-   model: Accounts.city
+    pk: 35
+    fields:
+        county: 4
+        name: "T\xE2rgu Ocna"
+-   model: Accounts.city
+    pk: 36
+    fields:
+        county: 4
+        name: "Sl\u0103nic Moldova"
+-   model: Accounts.city
+    pk: 37
+    fields:
+        county: 5
+        name: Oradea
+-   model: Accounts.city
+    pk: 38
+    fields:
+        county: 5
+        name: Salonta
+-   model: Accounts.city
+    pk: 39
+    fields:
+        county: 5
+        name: Marghita
+-   model: Accounts.city
+    pk: 40
+    fields:
+        county: 5
+        name: "S\u0103cueni"
+-   model: Accounts.city
+    pk: 41
+    fields:
+        county: 5
+        name: "Beiu\u0219"
+-   model: Accounts.city
+    pk: 42
+    fields:
+        county: 5
+        name: "Ale\u0219d"
+-   model: Accounts.city
+    pk: 43
+    fields:
+        county: 5
+        name: Valea lui Mihai
+-   model: Accounts.city
+    pk: 44
+    fields:
+        county: 5
+        name: "\u0218tei"
+-   model: Accounts.city
+    pk: 45
+    fields:
+        county: 5
+        name: "Va\u0219c\u0103u"
+-   model: Accounts.city
+    pk: 46
+    fields:
+        county: 5
+        name: Nucet
+-   model: Accounts.city
+    pk: 47
+    fields:
+        county: 6
+        name: "Bistri\u021Ba"
+-   model: Accounts.city
+    pk: 48
+    fields:
+        county: 6
+        name: Beclean
+-   model: Accounts.city
+    pk: 49
+    fields:
+        county: 6
+        name: "S\xE2ngeorzB\u0103i"
+-   model: Accounts.city
+    pk: 50
+    fields:
+        county: 6
+        name: "N\u0103s\u0103ud"
+-   model: Accounts.city
+    pk: 51
+    fields:
+        county: 7
+        name: "Boto\u0219ani"
+-   model: Accounts.city
+    pk: 52
+    fields:
+        county: 7
+        name: Dorohoi
+-   model: Accounts.city
+    pk: 53
+    fields:
+        county: 7
+        name: "Fl\u0103m\xE2nzi"
+-   model: Accounts.city
+    pk: 54
+    fields:
+        county: 7
+        name: Darabani
+-   model: Accounts.city
+    pk: 55
+    fields:
+        county: 7
+        name: "S\u0103veni"
+-   model: Accounts.city
+    pk: 56
+    fields:
+        county: 7
+        name: "\u0218tef\u0103ne\u0219ti"
+-   model: Accounts.city
+    pk: 57
+    fields:
+        county: 7
+        name: Bucecea
+-   model: Accounts.city
+    pk: 58
+    fields:
+        county: 8
+        name: "Bra\u0219ov"
+-   model: Accounts.city
+    pk: 59
+    fields:
+        county: 8
+        name: "S\u0103cele"
+-   model: Accounts.city
+    pk: 60
+    fields:
+        county: 8
+        name: "F\u0103g\u0103ra\u0219"
+-   model: Accounts.city
+    pk: 61
+    fields:
+        county: 8
+        name: "Z\u0103rne\u0219ti"
+-   model: Accounts.city
+    pk: 62
+    fields:
+        county: 8
+        name: Codlea
+-   model: Accounts.city
+    pk: 63
+    fields:
+        county: 8
+        name: "R\xE2\u0219nov"
+-   model: Accounts.city
+    pk: 64
+    fields:
+        county: 8
+        name: Victoria
+-   model: Accounts.city
+    pk: 65
+    fields:
+        county: 8
+        name: Rupea
+-   model: Accounts.city
+    pk: 66
+    fields:
+        county: 8
+        name: Ghimbav
+-   model: Accounts.city
+    pk: 67
+    fields:
+        county: 8
+        name: Predeal
+-   model: Accounts.city
+    pk: 68
+    fields:
+        county: 9
+        name: "Br\u0103ila"
+-   model: Accounts.city
+    pk: 69
+    fields:
+        county: 9
+        name: Ianca
+-   model: Accounts.city
+    pk: 70
+    fields:
+        county: 9
+        name: "\xCEnsur\u0103\u021Bei"
+-   model: Accounts.city
+    pk: 71
+    fields:
+        county: 9
+        name: "F\u0103urei"
+-   model: Accounts.city
+    pk: 72
+    fields:
+        county: 10
+        name: "Buz\u0103u"
+-   model: Accounts.city
+    pk: 73
+    fields:
+        county: 10
+        name: "R\xE2mnicu S\u0103rat"
+-   model: Accounts.city
+    pk: 74
+    fields:
+        county: 10
+        name: Nehoiu
+-   model: Accounts.city
+    pk: 75
+    fields:
+        county: 10
+        name: "P\u0103t\xE2rlagele"
+-   model: Accounts.city
+    pk: 76
+    fields:
+        county: 10
+        name: Pogoanele
+-   model: Accounts.city
+    pk: 77
+    fields:
+        county: 11
+        name: "Re\u0219i\u021Ba"
+-   model: Accounts.city
+    pk: 78
+    fields:
+        county: 11
+        name: "Caransebe\u0219"
+-   model: Accounts.city
+    pk: 79
+    fields:
+        county: 11
+        name: "Boc\u0219a"
+-   model: Accounts.city
+    pk: 80
+    fields:
+        county: 11
+        name: "Moldova Nou\u0103"
+-   model: Accounts.city
+    pk: 81
+    fields:
+        county: 11
+        name: "Oravi\u021Ba"
+-   model: Accounts.city
+    pk: 82
+    fields:
+        county: 11
+        name: "O\u021Belu Ro\u0219u"
+-   model: Accounts.city
+    pk: 83
+    fields:
+        county: 11
+        name: Anina
+-   model: Accounts.city
+    pk: 84
+    fields:
+        county: 11
+        name: "B\u0103ile Herculane"
+-   model: Accounts.city
+    pk: 85
+    fields:
+        county: 12
+        name: ClujNapoca
+-   model: Accounts.city
+    pk: 86
+    fields:
+        county: 12
+        name: Turda
+-   model: Accounts.city
+    pk: 87
+    fields:
+        county: 12
+        name: Dej
+-   model: Accounts.city
+    pk: 88
+    fields:
+        county: 12
+        name: "C\xE2mpia Turzii"
+-   model: Accounts.city
+    pk: 89
+    fields:
+        county: 12
+        name: Gherla
+-   model: Accounts.city
+    pk: 90
+    fields:
+        county: 12
+        name: Huedin
+-   model: Accounts.city
+    pk: 91
+    fields:
+        county: 13
+        name: Medgidia
+-   model: Accounts.city
+    pk: 92
+    fields:
+        county: 13
+        name: Mangalia
+-   model: Accounts.city
+    pk: 93
+    fields:
+        county: 13
+        name: "N\u0103vodari"
+-   model: Accounts.city
+    pk: 94
+    fields:
+        county: 13
+        name: "Cernavod\u0103"
+-   model: Accounts.city
+    pk: 95
+    fields:
+        county: 13
+        name: Ovidiu
+-   model: Accounts.city
+    pk: 96
+    fields:
+        county: 13
+        name: Murfatlar
+-   model: Accounts.city
+    pk: 97
+    fields:
+        county: 13
+        name: "H\xE2r\u0219ova"
+-   model: Accounts.city
+    pk: 98
+    fields:
+        county: 13
+        name: Eforie
+-   model: Accounts.city
+    pk: 99
+    fields:
+        county: 13
+        name: Techirghiol
+-   model: Accounts.city
+    pk: 100
+    fields:
+        county: 13
+        name: "Negru Vod\u0103"
+-   model: Accounts.city
+    pk: 101
+    fields:
+        county: 14
+        name: "Sf\xE2ntu Gheorghe"
+-   model: Accounts.city
+    pk: 102
+    fields:
+        county: 14
+        name: "T\xE2rgu Secuiesc"
+-   model: Accounts.city
+    pk: 103
+    fields:
+        county: 14
+        name: Covasna
+-   model: Accounts.city
+    pk: 104
+    fields:
+        county: 14
+        name: Baraolt
+-   model: Accounts.city
+    pk: 105
+    fields:
+        county: 14
+        name: "\xCEntorsura Buz\u0103ului"
+-   model: Accounts.city
+    pk: 106
+    fields:
+        county: 15
+        name: "C\u0103l\u0103ra\u0219i"
+-   model: Accounts.city
+    pk: 107
+    fields:
+        county: 15
+        name: "Olteni\u021Ba"
+-   model: Accounts.city
+    pk: 108
+    fields:
+        county: 15
+        name: "Bude\u0219ti"
+-   model: Accounts.city
+    pk: 109
+    fields:
+        county: 15
+        name: Fundulea
+-   model: Accounts.city
+    pk: 110
+    fields:
+        county: 15
+        name: "Lehliu Gar\u0103"
+-   model: Accounts.city
+    pk: 111
+    fields:
+        county: 16
+        name: Craiova
+-   model: Accounts.city
+    pk: 112
+    fields:
+        county: 16
+        name: "B\u0103ile\u0219ti"
+-   model: Accounts.city
+    pk: 113
+    fields:
+        county: 16
+        name: Calafat
+-   model: Accounts.city
+    pk: 114
+    fields:
+        county: 16
+        name: "Filia\u0219i"
+-   model: Accounts.city
+    pk: 115
+    fields:
+        county: 16
+        name: "D\u0103buleni"
+-   model: Accounts.city
+    pk: 116
+    fields:
+        county: 16
+        name: Segarcea
+-   model: Accounts.city
+    pk: 117
+    fields:
+        county: 16
+        name: Bechet
+-   model: Accounts.city
+    pk: 118
+    fields:
+        county: 17
+        name: "T\xE2rgovi\u0219te"
+-   model: Accounts.city
+    pk: 119
+    fields:
+        county: 17
+        name: Moreni
+-   model: Accounts.city
+    pk: 120
+    fields:
+        county: 17
+        name: Pucioasa
+-   model: Accounts.city
+    pk: 121
+    fields:
+        county: 17
+        name: "G\u0103e\u0219ti"
+-   model: Accounts.city
+    pk: 122
+    fields:
+        county: 17
+        name: Titu
+-   model: Accounts.city
+    pk: 123
+    fields:
+        county: 17
+        name: Fieni
+-   model: Accounts.city
+    pk: 124
+    fields:
+        county: 17
+        name: "R\u0103cari"
+-   model: Accounts.city
+    pk: 125
+    fields:
+        county: 18
+        name: "Gala\u021Bi"
+-   model: Accounts.city
+    pk: 126
+    fields:
+        county: 18
+        name: Tecuci
+-   model: Accounts.city
+    pk: 127
+    fields:
+        county: 18
+        name: "T\xE2rgu Bujor"
+-   model: Accounts.city
+    pk: 128
+    fields:
+        county: 18
+        name: "Bere\u0219ti"
+-   model: Accounts.city
+    pk: 129
+    fields:
+        county: 19
+        name: Giurgiu
+-   model: Accounts.city
+    pk: 130
+    fields:
+        county: 19
+        name: BolintinVale
+-   model: Accounts.city
+    pk: 131
+    fields:
+        county: 19
+        name: "Mih\u0103ile\u0219ti"
+-   model: Accounts.city
+    pk: 132
+    fields:
+        county: 20
+        name: "T\xE2rgu Jiu"
+-   model: Accounts.city
+    pk: 133
+    fields:
+        county: 20
+        name: Motru
+-   model: Accounts.city
+    pk: 134
+    fields:
+        county: 20
+        name: Rovinari
+-   model: Accounts.city
+    pk: 135
+    fields:
+        county: 20
+        name: "Bumbe\u0219tiJiu"
+-   model: Accounts.city
+    pk: 136
+    fields:
+        county: 20
+        name: "T\xE2rgu C\u0103rbune\u0219ti"
+-   model: Accounts.city
+    pk: 137
+    fields:
+        county: 20
+        name: Tismana
+-   model: Accounts.city
+    pk: 138
+    fields:
+        county: 20
+        name: Novaci
+-   model: Accounts.city
+    pk: 139
+    fields:
+        county: 20
+        name: "\u021Aicleni"
+-   model: Accounts.city
+    pk: 140
+    fields:
+        county: 21
+        name: Miercurea Ciuc
+-   model: Accounts.city
+    pk: 141
+    fields:
+        county: 21
+        name: Odorheiu Secuiesc
+-   model: Accounts.city
+    pk: 142
+    fields:
+        county: 21
+        name: Gheorgheni
+-   model: Accounts.city
+    pk: 143
+    fields:
+        county: 21
+        name: "Topli\u021Ba"
+-   model: Accounts.city
+    pk: 144
+    fields:
+        county: 21
+        name: Cristuru Secuiesc
+-   model: Accounts.city
+    pk: 145
+    fields:
+        county: 21
+        name: "Vl\u0103hi\u021Ba"
+-   model: Accounts.city
+    pk: 146
+    fields:
+        county: 21
+        name: "B\u0103lan"
+-   model: Accounts.city
+    pk: 147
+    fields:
+        county: 21
+        name: Borsec
+-   model: Accounts.city
+    pk: 148
+    fields:
+        county: 21
+        name: "B\u0103ile Tu\u0219nad"
+-   model: Accounts.city
+    pk: 149
+    fields:
+        county: 22
+        name: Deva
+-   model: Accounts.city
+    pk: 150
+    fields:
+        county: 22
+        name: Hunedoara
+-   model: Accounts.city
+    pk: 151
+    fields:
+        county: 22
+        name: "Petro\u0219ani"
+-   model: Accounts.city
+    pk: 152
+    fields:
+        county: 22
+        name: Vulcan
+-   model: Accounts.city
+    pk: 153
+    fields:
+        county: 22
+        name: Lupeni
+-   model: Accounts.city
+    pk: 154
+    fields:
+        county: 22
+        name: Petrila
+-   model: Accounts.city
+    pk: 155
+    fields:
+        county: 22
+        name: "Or\u0103\u0219tie"
+-   model: Accounts.city
+    pk: 156
+    fields:
+        county: 22
+        name: Brad
+-   model: Accounts.city
+    pk: 157
+    fields:
+        county: 22
+        name: Simeria
+-   model: Accounts.city
+    pk: 158
+    fields:
+        county: 22
+        name: "C\u0103lan"
+-   model: Accounts.city
+    pk: 159
+    fields:
+        county: 22
+        name: "Ha\u021Beg"
+-   model: Accounts.city
+    pk: 160
+    fields:
+        county: 22
+        name: Uricani
+-   model: Accounts.city
+    pk: 161
+    fields:
+        county: 22
+        name: Geoagiu
+-   model: Accounts.city
+    pk: 162
+    fields:
+        county: 22
+        name: Aninoasa
+-   model: Accounts.city
+    pk: 163
+    fields:
+        county: 23
+        name: Slobozia
+-   model: Accounts.city
+    pk: 164
+    fields:
+        county: 23
+        name: "Fete\u0219ti"
+-   model: Accounts.city
+    pk: 165
+    fields:
+        county: 23
+        name: Urziceni
+-   model: Accounts.city
+    pk: 166
+    fields:
+        county: 23
+        name: "\u021A\u0103nd\u0103rei"
+-   model: Accounts.city
+    pk: 167
+    fields:
+        county: 23
+        name: Amara
+-   model: Accounts.city
+    pk: 168
+    fields:
+        county: 23
+        name: "Fierbin\u021BiT\xE2rg"
+-   model: Accounts.city
+    pk: 169
+    fields:
+        county: 23
+        name: "C\u0103z\u0103ne\u0219ti"
+-   model: Accounts.city
+    pk: 170
+    fields:
+        county: 24
+        name: "Ia\u0219i"
+-   model: Accounts.city
+    pk: 171
+    fields:
+        county: 24
+        name: "Pa\u0219cani"
+-   model: Accounts.city
+    pk: 172
+    fields:
+        county: 24
+        name: "H\xE2rl\u0103u"
+-   model: Accounts.city
+    pk: 173
+    fields:
+        county: 24
+        name: "T\xE2rgu Frumos"
+-   model: Accounts.city
+    pk: 174
+    fields:
+        county: 24
+        name: Podu Iloaiei
+-   model: Accounts.city
+    pk: 175
+    fields:
+        county: 25
+        name: Voluntari
+-   model: Accounts.city
+    pk: 176
+    fields:
+        county: 25
+        name: Pantelimon
+-   model: Accounts.city
+    pk: 177
+    fields:
+        county: 25
+        name: Buftea
+-   model: Accounts.city
+    pk: 178
+    fields:
+        county: 25
+        name: "Pope\u0219tiLeordeni"
+-   model: Accounts.city
+    pk: 179
+    fields:
+        county: 25
+        name: Bragadiru
+-   model: Accounts.city
+    pk: 180
+    fields:
+        county: 25
+        name: Chitila
+-   model: Accounts.city
+    pk: 181
+    fields:
+        county: 25
+        name: Otopeni
+-   model: Accounts.city
+    pk: 182
+    fields:
+        county: 25
+        name: "M\u0103gurele"
+-   model: Accounts.city
+    pk: 183
+    fields:
+        county: 26
+        name: Baia Mare
+-   model: Accounts.city
+    pk: 184
+    fields:
+        county: 26
+        name: "Sighetu Marma\u021Biei"
+-   model: Accounts.city
+    pk: 185
+    fields:
+        county: 26
+        name: "Bor\u0219a"
+-   model: Accounts.city
+    pk: 186
+    fields:
+        county: 26
+        name: Baia Sprie
+-   model: Accounts.city
+    pk: 187
+    fields:
+        county: 26
+        name: "Vi\u0219eu de Sus"
+-   model: Accounts.city
+    pk: 188
+    fields:
+        county: 26
+        name: "T\xE2rgu L\u0103pu\u0219"
+-   model: Accounts.city
+    pk: 189
+    fields:
+        county: 26
+        name: Seini
+-   model: Accounts.city
+    pk: 190
+    fields:
+        county: 26
+        name: "\u0218omcuta Mare"
+-   model: Accounts.city
+    pk: 191
+    fields:
+        county: 26
+        name: Ulmeni
+-   model: Accounts.city
+    pk: 192
+    fields:
+        county: 26
+        name: "T\u0103u\u021BiiM\u0103gher\u0103u\u0219"
+-   model: Accounts.city
+    pk: 193
+    fields:
+        county: 26
+        name: Cavnic
+-   model: Accounts.city
+    pk: 194
+    fields:
+        county: 26
+        name: "S\u0103li\u0219tea de Sus"
+-   model: Accounts.city
+    pk: 195
+    fields:
+        county: 26
+        name: "Dragomire\u0219ti"
+-   model: Accounts.city
+    pk: 196
+    fields:
+        county: 27
+        name: Strehaia
+-   model: Accounts.city
+    pk: 197
+    fields:
+        county: 27
+        name: "Or\u0219ova"
+-   model: Accounts.city
+    pk: 198
+    fields:
+        county: 27
+        name: "Baia de Aram\u0103"
+-   model: Accounts.city
+    pk: 199
+    fields:
+        county: 27
+        name: "V\xE2nju Mare"
+-   model: Accounts.city
+    pk: 200
+    fields:
+        county: 28
+        name: "T\xE2rgu Mure\u0219"
+-   model: Accounts.city
+    pk: 201
+    fields:
+        county: 28
+        name: Reghin
+-   model: Accounts.city
+    pk: 202
+    fields:
+        county: 28
+        name: "Sighi\u0219oara"
+-   model: Accounts.city
+    pk: 203
+    fields:
+        county: 28
+        name: "T\xE2rn\u0103veni"
+-   model: Accounts.city
+    pk: 204
+    fields:
+        county: 28
+        name: "Ludu\u0219"
+-   model: Accounts.city
+    pk: 205
+    fields:
+        county: 28
+        name: Sovata
+-   model: Accounts.city
+    pk: 206
+    fields:
+        county: 28
+        name: Iernut
+-   model: Accounts.city
+    pk: 207
+    fields:
+        county: 28
+        name: "S\u0103rma\u0219u"
+-   model: Accounts.city
+    pk: 208
+    fields:
+        county: 28
+        name: Ungheni
+-   model: Accounts.city
+    pk: 209
+    fields:
+        county: 28
+        name: Miercurea Nirajului
+-   model: Accounts.city
+    pk: 210
+    fields:
+        county: 28
+        name: "S\xE2ngeorgiu de P\u0103dure"
+-   model: Accounts.city
+    pk: 211
+    fields:
+        county: 29
+        name: "Piatra Neam\u021B"
+-   model: Accounts.city
+    pk: 212
+    fields:
+        county: 29
+        name: Roman
+-   model: Accounts.city
+    pk: 213
+    fields:
+        county: 29
+        name: "T\xE2rgu Neam\u021B"
+-   model: Accounts.city
+    pk: 214
+    fields:
+        county: 29
+        name: Roznov
+-   model: Accounts.city
+    pk: 215
+    fields:
+        county: 29
+        name: Bicaz
+-   model: Accounts.city
+    pk: 216
+    fields:
+        county: 30
+        name: Slatina
+-   model: Accounts.city
+    pk: 217
+    fields:
+        county: 30
+        name: Caracal
+-   model: Accounts.city
+    pk: 218
+    fields:
+        county: 30
+        name: "Bal\u0219"
+-   model: Accounts.city
+    pk: 219
+    fields:
+        county: 30
+        name: Corabia
+-   model: Accounts.city
+    pk: 220
+    fields:
+        county: 30
+        name: "Scornice\u0219ti"
+-   model: Accounts.city
+    pk: 221
+    fields:
+        county: 30
+        name: "Dr\u0103g\u0103ne\u0219tiOlt"
+-   model: Accounts.city
+    pk: 222
+    fields:
+        county: 30
+        name: PiatraOlt
+-   model: Accounts.city
+    pk: 223
+    fields:
+        county: 30
+        name: Potcoava
+-   model: Accounts.city
+    pk: 224
+    fields:
+        county: 31
+        name: "Ploie\u0219ti"
+-   model: Accounts.city
+    pk: 225
+    fields:
+        county: 31
+        name: "C\xE2mpina"
+-   model: Accounts.city
+    pk: 226
+    fields:
+        county: 31
+        name: "B\u0103icoi"
+-   model: Accounts.city
+    pk: 227
+    fields:
+        county: 31
+        name: Breaza
+-   model: Accounts.city
+    pk: 228
+    fields:
+        county: 31
+        name: Mizil
+-   model: Accounts.city
+    pk: 229
+    fields:
+        county: 31
+        name: "V\u0103lenii de Munte"
+-   model: Accounts.city
+    pk: 230
+    fields:
+        county: 31
+        name: Comarnic
+-   model: Accounts.city
+    pk: 231
+    fields:
+        county: 31
+        name: "Bolde\u0219tiSc\u0103eni"
+-   model: Accounts.city
+    pk: 232
+    fields:
+        county: 31
+        name: "Urla\u021Bi"
+-   model: Accounts.city
+    pk: 233
+    fields:
+        county: 31
+        name: Sinaia
+-   model: Accounts.city
+    pk: 234
+    fields:
+        county: 31
+        name: "Bu\u0219teni"
+-   model: Accounts.city
+    pk: 235
+    fields:
+        county: 31
+        name: Plopeni
+-   model: Accounts.city
+    pk: 236
+    fields:
+        county: 31
+        name: "Sl\u0103nic"
+-   model: Accounts.city
+    pk: 237
+    fields:
+        county: 31
+        name: Azuga
+-   model: Accounts.city
+    pk: 238
+    fields:
+        county: 32
+        name: Satu Mare
+-   model: Accounts.city
+    pk: 239
+    fields:
+        county: 32
+        name: Carei
+-   model: Accounts.city
+    pk: 240
+    fields:
+        county: 32
+        name: "Negre\u0219tiOa\u0219"
+-   model: Accounts.city
+    pk: 241
+    fields:
+        county: 32
+        name: "T\u0103\u0219nad"
+-   model: Accounts.city
+    pk: 242
+    fields:
+        county: 32
+        name: Livada
+-   model: Accounts.city
+    pk: 243
+    fields:
+        county: 32
+        name: Ardud
+-   model: Accounts.city
+    pk: 244
+    fields:
+        county: 33
+        name: Sibiu
+-   model: Accounts.city
+    pk: 245
+    fields:
+        county: 33
+        name: "Media\u0219"
+-   model: Accounts.city
+    pk: 246
+    fields:
+        county: 33
+        name: "Cisn\u0103die"
+-   model: Accounts.city
+    pk: 247
+    fields:
+        county: 33
+        name: Avrig
+-   model: Accounts.city
+    pk: 248
+    fields:
+        county: 33
+        name: Agnita
+-   model: Accounts.city
+    pk: 249
+    fields:
+        county: 33
+        name: "Dumbr\u0103veni"
+-   model: Accounts.city
+    pk: 250
+    fields:
+        county: 33
+        name: "T\u0103lmaciu"
+-   model: Accounts.city
+    pk: 251
+    fields:
+        county: 33
+        name: "Cop\u0219a Mic\u0103"
+-   model: Accounts.city
+    pk: 252
+    fields:
+        county: 33
+        name: "S\u0103li\u0219te"
+-   model: Accounts.city
+    pk: 253
+    fields:
+        county: 33
+        name: Miercurea Sibiului
+-   model: Accounts.city
+    pk: 254
+    fields:
+        county: 33
+        name: Ocna Sibiului
+-   model: Accounts.city
+    pk: 255
+    fields:
+        county: 34
+        name: Suceava
+-   model: Accounts.city
+    pk: 256
+    fields:
+        county: 34
+        name: "F\u0103lticeni"
+-   model: Accounts.city
+    pk: 257
+    fields:
+        county: 34
+        name: "R\u0103d\u0103u\u021Bi"
+-   model: Accounts.city
+    pk: 258
+    fields:
+        county: 34
+        name: "C\xE2mpulung Moldovenesc"
+-   model: Accounts.city
+    pk: 259
+    fields:
+        county: 34
+        name: Vatra Dornei
+-   model: Accounts.city
+    pk: 260
+    fields:
+        county: 34
+        name: Gura Humorului
+-   model: Accounts.city
+    pk: 261
+    fields:
+        county: 34
+        name: Vicovu de Sus
+-   model: Accounts.city
+    pk: 262
+    fields:
+        county: 34
+        name: Dolhasca
+-   model: Accounts.city
+    pk: 263
+    fields:
+        county: 34
+        name: Liteni
+-   model: Accounts.city
+    pk: 264
+    fields:
+        county: 34
+        name: Salcea
+-   model: Accounts.city
+    pk: 265
+    fields:
+        county: 34
+        name: Siret
+-   model: Accounts.city
+    pk: 266
+    fields:
+        county: 34
+        name: Cajvana
+-   model: Accounts.city
+    pk: 267
+    fields:
+        county: 34
+        name: Frasin
+-   model: Accounts.city
+    pk: 268
+    fields:
+        county: 34
+        name: "Bro\u0219teni"
+-   model: Accounts.city
+    pk: 269
+    fields:
+        county: 34
+        name: "Mili\u0219\u0103u\u021Bi"
+-   model: Accounts.city
+    pk: 270
+    fields:
+        county: 34
+        name: Solca
+-   model: Accounts.city
+    pk: 271
+    fields:
+        county: 35
+        name: "Zal\u0103u"
+-   model: Accounts.city
+    pk: 272
+    fields:
+        county: 35
+        name: "\u0218imleu Silvaniei"
+-   model: Accounts.city
+    pk: 273
+    fields:
+        county: 35
+        name: Jibou
+-   model: Accounts.city
+    pk: 274
+    fields:
+        county: 35
+        name: Cehu Silvaniei
+-   model: Accounts.city
+    pk: 275
+    fields:
+        county: 36
+        name: Alexandria
+-   model: Accounts.city
+    pk: 276
+    fields:
+        county: 36
+        name: "Ro\u0219iorii de Vede"
+-   model: Accounts.city
+    pk: 277
+    fields:
+        county: 36
+        name: "Turnu M\u0103gurele"
+-   model: Accounts.city
+    pk: 278
+    fields:
+        county: 36
+        name: Zimnicea
+-   model: Accounts.city
+    pk: 279
+    fields:
+        county: 36
+        name: Videle
+-   model: Accounts.city
+    pk: 280
+    fields:
+        county: 37
+        name: "Timi\u0219oara"
+-   model: Accounts.city
+    pk: 281
+    fields:
+        county: 37
+        name: Lugoj
+-   model: Accounts.city
+    pk: 282
+    fields:
+        county: 37
+        name: "S\xE2nnicolau Mare"
+-   model: Accounts.city
+    pk: 283
+    fields:
+        county: 37
+        name: Jimbolia
+-   model: Accounts.city
+    pk: 284
+    fields:
+        county: 37
+        name: "Reca\u0219"
+-   model: Accounts.city
+    pk: 285
+    fields:
+        county: 37
+        name: "F\u0103get"
+-   model: Accounts.city
+    pk: 286
+    fields:
+        county: 37
+        name: "Buzia\u0219"
+-   model: Accounts.city
+    pk: 287
+    fields:
+        county: 37
+        name: Deta
+-   model: Accounts.city
+    pk: 288
+    fields:
+        county: 37
+        name: "G\u0103taia"
+-   model: Accounts.city
+    pk: 289
+    fields:
+        county: 37
+        name: Ciacova
+-   model: Accounts.city
+    pk: 290
+    fields:
+        county: 38
+        name: Tulcea
+-   model: Accounts.city
+    pk: 291
+    fields:
+        county: 38
+        name: Babadag
+-   model: Accounts.city
+    pk: 292
+    fields:
+        county: 38
+        name: "M\u0103cin"
+-   model: Accounts.city
+    pk: 293
+    fields:
+        county: 38
+        name: Isaccea
+-   model: Accounts.city
+    pk: 294
+    fields:
+        county: 38
+        name: Sulina
+-   model: Accounts.city
+    pk: 295
+    fields:
+        county: 39
+        name: "B\xE2rlad"
+-   model: Accounts.city
+    pk: 296
+    fields:
+        county: 39
+        name: Vaslui
+-   model: Accounts.city
+    pk: 297
+    fields:
+        county: 39
+        name: "Hu\u0219i"
+-   model: Accounts.city
+    pk: 298
+    fields:
+        county: 39
+        name: "Negre\u0219ti"
+-   model: Accounts.city
+    pk: 299
+    fields:
+        county: 39
+        name: Murgeni
+-   model: Accounts.city
+    pk: 300
+    fields:
+        county: 40
+        name: "Foc\u0219ani"
+-   model: Accounts.city
+    pk: 301
+    fields:
+        county: 40
+        name: Adjud
+-   model: Accounts.city
+    pk: 302
+    fields:
+        county: 40
+        name: "M\u0103r\u0103\u0219e\u0219ti"
+-   model: Accounts.city
+    pk: 303
+    fields:
+        county: 40
+        name: "Odobe\u0219ti"
+-   model: Accounts.city
+    pk: 304
+    fields:
+        county: 40
+        name: Panciu
+-   model: Accounts.city
+    pk: 305
+    fields:
+        county: 41
+        name: "R\xE2mnicu V\xE2lcea"
+-   model: Accounts.city
+    pk: 306
+    fields:
+        county: 41
+        name: "Dr\u0103g\u0103\u0219ani"
+-   model: Accounts.city
+    pk: 307
+    fields:
+        county: 41
+        name: "B\u0103beni"
+-   model: Accounts.city
+    pk: 308
+    fields:
+        county: 41
+        name: "C\u0103lim\u0103ne\u0219ti"
+-   model: Accounts.city
+    pk: 309
+    fields:
+        county: 41
+        name: Horezu
+-   model: Accounts.city
+    pk: 310
+    fields:
+        county: 41
+        name: Brezoi
+-   model: Accounts.city
+    pk: 311
+    fields:
+        county: 41
+        name: "B\u0103lce\u0219ti"
+-   model: Accounts.city
+    pk: 312
+    fields:
+        county: 41
+        name: "Berbe\u0219ti"
+-   model: Accounts.city
+    pk: 313
+    fields:
+        county: 41
+        name: "B\u0103ile Ol\u0103ne\u0219ti"
+-   model: Accounts.city
+    pk: 314
+    fields:
+        county: 41
+        name: Ocnele Mari
+-   model: Accounts.city
+    pk: 315
+    fields:
+        county: 41
+        name: "B\u0103ile Govora"
+-   model: Accounts.client
+    pk: 1
+    fields:
+        user: 1
+        sex: '1'
+        phone: 0755178247
+        country: 1
+        county: 1
+        city: 1
+        music_type: r&b,rock,manele
+        profile_picture: images/profile_images_clients/b_the_b_HFicFzB.jpeg
+-   model: Accounts.artist
+    pk: 1
+    fields:
+        user: 2
+        sex: '1'
+        phone: 07551782
+        country: 1
+        county: 1
+        city: 1
+        music_type: r&b
+        music_type_artist: rock
+        caption: manelele e viata meu
+        profile_picture: images/profile_images_artist/849552.jpg
+        background_picture: images/background_artist/764362.jpg
+-   model: Accounts.organizer
+    pk: 1
+    fields:
+        user: 3
+        sex: '2'
+        phone: 0755178223
+        country: 1
+        county: 1
+        city: 1
+        caption: coaielemele
+        profile_picture: images/profile_images_organizer/b_the_b.jpeg
+        background_picture: images/background_organizer/849552.jpg
