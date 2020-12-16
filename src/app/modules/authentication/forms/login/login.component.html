@@ -24,6 +24,14 @@
       <div class="forgot-password">
         <a>Forgot your password?</a>
       </div>
+      <div class="form-buttons">
+        <button class="default-slrk-btn">
+          <span> Continue </span>
+        </button>
+      </div>
+      <div *ngIf="submitted" class="subbmited-true-form">
+          <h2>Login is working</h2>
+      </div>
     </form>
   </div>
   

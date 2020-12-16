@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpHeaders} from "@angular/common/http";
+import { HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -49,6 +49,16 @@ export class ApiService {
       'authorization': 'Token ' + JSON.parse(localStorage.getItem('currentUser')).token,
     });
     return {
+      headers: headers,
+      withCredentials: true
+    };
+  }
+
+  static forgotPasswordRequestOptions() {
+    const headers = new HttpHeaders({
+      'content-type': 'application/json',
+    });
+    return { 
       headers: headers,
       withCredentials: true
     };

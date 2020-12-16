@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "frontend-soundlurke"
+    }
+  },
+  "defaultProject": "frontend-soundlurke",
+  "cli": {
+    "analytics": "c9d1abd2-4e47-48d1-9b72-3d9f100544bc"
+  }
 }

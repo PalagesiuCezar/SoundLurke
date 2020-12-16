@@ -44,7 +44,7 @@ export class AuthenticationService {
    */
   login(email: string, password: string) {
     const requestOptions = ApiService.basicAuthRequestOptions(email, password);
-    return this.http.post<any>(API_URL + '/login', {}, requestOptions)
+    return this.http.post<any>(API_URL + '/login/', {}, requestOptions)
       .pipe(map(user => {
         if (user && user.token) {
           localStorage.setItem('currentUser', JSON.stringify(user));

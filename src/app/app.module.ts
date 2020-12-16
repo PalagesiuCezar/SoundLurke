@@ -14,6 +14,11 @@ import { MainViewComponent } from './core/pages/main-view/main-view.component';
 
 import { TokenAuthInterceptor } from './core/interceptors/token-auth.interceptor';
 import { ErrorInterceptor } from './core/interceptors/error-handler.interceptor';
+import { ForgotPasswordComponent } from './core/pages/password-pages/forgot-password/reset-forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from './core/pages/password-pages/reset-password/reset-password.component';
+import { ResetForgotPasswordConfirmComponent } from './core/pages/password-pages/forgot-password/reset-forgot-password-confirm/reset-forgot-password-confirm.component';
+import { EmailAcivationPageComponent } from './core/pages/email-activation-pages/email-acivation-page/email-acivation-page.component';
+import { EmailAcivationSuccessfulPageComponent } from './core/pages/email-activation-pages/email-acivation-successful-page/email-acivation-successful-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { ErrorInterceptor } from './core/interceptors/error-handler.interceptor'
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    MainViewComponent
+    MainViewComponent,
+    ForgotPasswordComponent,
+    ResetPasswordComponent,
+    ResetForgotPasswordConfirmComponent,
+    EmailAcivationPageComponent,
+    EmailAcivationSuccessfulPageComponent
   ],
   imports: [
     BrowserModule,
